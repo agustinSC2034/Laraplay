@@ -14,7 +14,12 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-        .brand-gradient {
+        /* Contenedor del fondo animado */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Lo ponemos detrás de todo */
             background: #2c1e5a;
             background: linear-gradient(145deg, #2c1e5a 0%, #6a3093 100%);
         }
@@ -31,6 +36,7 @@
             flex-direction: column;
             height: 100%;
             text-decoration: none;
+            backdrop-filter: blur(4px); /* Efecto de desenfoque para el fondo */
         }
         .link-card:hover {
             transform: translateY(-5px);
@@ -76,6 +82,7 @@
             border-radius: 0.75rem;
             cursor: pointer;
             transition: background 0.3s;
+            backdrop-filter: blur(4px);
         }
         .faq-item summary:hover {
             background: rgba(17, 24, 39, 0.7);
@@ -86,6 +93,7 @@
             border-top: none;
             border-radius: 0 0 0.75rem 0.75rem;
             background: rgba(17, 24, 39, 0.3);
+            backdrop-filter: blur(4px);
         }
         .faq-item summary::-webkit-details-marker {
             display: none;
@@ -98,8 +106,12 @@
         }
     </style>
 </head>
-<body class="brand-gradient text-white min-h-screen">
-    <div class="max-w-4xl mx-auto p-4 sm:p-8">
+<body class="text-white min-h-screen">
+    <!-- Contenedor para la animación de partículas -->
+    <div id="particles-js"></div>
+
+    <!-- Contenido de la página -->
+    <div class="relative z-10 max-w-4xl mx-auto p-4 sm:p-8">
 
         <!-- Logo y Título -->
         <div class="text-center mb-12">
@@ -155,7 +167,7 @@
         <!-- Sección de Dispositivos Compatibles -->
         <div class="mb-12">
             <h2 class="text-2xl font-bold mb-6 text-center brand-cyan">Dispositivos Compatibles</h2>
-            <div class="bg-slate-900/50 border border-white/10 rounded-3xl p-6 sm:p-8 max-w-2xl mx-auto">
+            <div class="bg-slate-900/50 border border-white/10 rounded-3xl p-6 sm:p-8 max-w-2xl mx-auto backdrop-filter backdrop-blur-sm">
                 <ul class="space-y-3 text-slate-200">
                     <li class="flex items-start">
                         <svg class="w-5 h-5 brand-cyan mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -189,7 +201,7 @@
             </div>
         </div>
 
-        <!-- =========== SECCIÓN DE PREGUNTAS FRECUENTES (FAQ) ACTUALIZADA =========== -->
+        <!-- SECCIÓN DE PREGUNTAS FRECUENTES (FAQ) -->
         <div class="mb-12">
             <h2 class="text-2xl font-bold mb-6 text-center brand-cyan">Preguntas Frecuentes</h2>
             <div class="max-w-2xl mx-auto space-y-4">
@@ -205,7 +217,6 @@
                     </div>
                 </details>
                 
-                <!-- PREGUNTA NUEVA AÑADIDA AQUÍ -->
                 <details class="faq-item">
                     <summary>
                         <span class="font-semibold">¿Cuántos dispositivos puedo registrar?</span>
@@ -254,11 +265,9 @@
 
             </div>
         </div>
-        <!-- ================= FIN DE LA NUEVA SECCIÓN ================= -->
-
 
         <!-- Contacto -->
-        <div class="text-center bg-slate-900/50 border border-white/10 rounded-3xl p-8">
+        <div class="text-center bg-slate-900/50 border border-white/10 rounded-3xl p-8 backdrop-filter backdrop-blur-sm">
             <h2 class="text-2xl font-bold mb-2">¿Todavía tenés dudas?</h2>
             <p class="text-slate-300 mb-6">Estamos para ayudarte. ¡Escribinos!</p>
             <a href="https://wa.me/5491123948816" target="_blank" class="button-cyan py-3 px-8 text-lg">
@@ -272,8 +281,65 @@
         </div>
     </div>
     
+    <!-- Scripts para la animación -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        // Pequeño script para manejar el ícono del acordeón
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80, // Aumentamos el número de partículas
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#00f6ff" 
+                },
+                "shape": {
+                    "type": "circle",
+                },
+                "opacity": {
+                    "value": 0.7, // Aumentamos la opacidad de las partículas
+                    "random": true,
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.2, // Aumentamos la opacidad de las líneas
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1.5, // Aumentamos un poco la velocidad
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": false, 
+                    },
+                    "onclick": {
+                        "enable": false,
+                    },
+                    "resize": true
+                }
+            },
+            "retina_detect": true
+        });
+
+        // Script para el acordeón de FAQ
         const details = document.querySelectorAll('.faq-item');
         details.forEach(item => {
             item.addEventListener('toggle', event => {
