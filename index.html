@@ -65,6 +65,37 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0, 188, 212, 0.5);
         }
+        /* Estilos para el acordeón de FAQ */
+        .faq-item summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background: rgba(17, 24, 39, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 0.75rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .faq-item summary:hover {
+            background: rgba(17, 24, 39, 0.7);
+        }
+        .faq-item .faq-content {
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: none;
+            border-radius: 0 0 0.75rem 0.75rem;
+            background: rgba(17, 24, 39, 0.3);
+        }
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-item summary .icon {
+            transition: transform 0.3s;
+        }
+        .faq-item[open] summary .icon {
+            transform: rotate(45deg);
+        }
     </style>
 </head>
 <body class="brand-gradient text-white min-h-screen">
@@ -121,7 +152,7 @@
              </div>
         </div>
 
-        <!-- =========== NUEVA SECCIÓN DE DISPOSITIVOS COMPATIBLES =========== -->
+        <!-- Sección de Dispositivos Compatibles -->
         <div class="mb-12">
             <h2 class="text-2xl font-bold mb-6 text-center brand-cyan">Dispositivos Compatibles</h2>
             <div class="bg-slate-900/50 border border-white/10 rounded-3xl p-6 sm:p-8 max-w-2xl mx-auto">
@@ -157,6 +188,72 @@
                 </ul>
             </div>
         </div>
+
+        <!-- =========== SECCIÓN DE PREGUNTAS FRECUENTES (FAQ) ACTUALIZADA =========== -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-center brand-cyan">Preguntas Frecuentes</h2>
+            <div class="max-w-2xl mx-auto space-y-4">
+                
+                <details class="faq-item">
+                    <summary>
+                        <span class="font-semibold">Olvidé mi contraseña, ¿cómo la recupero?</span>
+                        <span class="icon text-xl brand-cyan">+</span>
+                    </summary>
+                    <div class="faq-content text-slate-300 space-y-3">
+                        <p>En la pantalla de inicio de sesión, hacé clic en “Olvidé mis datos de acceso” y seguí los pasos. Si no recibís el mail, revisá tu carpeta de spam o correo no deseado.</p>
+                        <p>Si el problema continúa, contactate con nosotros por WhatsApp.</p>
+                    </div>
+                </details>
+                
+                <!-- PREGUNTA NUEVA AÑADIDA AQUÍ -->
+                <details class="faq-item">
+                    <summary>
+                        <span class="font-semibold">¿Cuántos dispositivos puedo registrar?</span>
+                        <span class="icon text-xl brand-cyan">+</span>
+                    </summary>
+                    <div class="faq-content text-slate-300 space-y-3">
+                        <p>Podés registrar hasta <strong>6 dispositivos en total</strong> en tu cuenta, divididos en:</p>
+                        <ul class="list-disc list-inside pl-2 space-y-1">
+                            <li><strong>3 dispositivos de TV</strong> (Smart TV, Chromecast, TV Box, etc.).</li>
+                            <li><strong>3 dispositivos móviles y web</strong> (celulares, tablets o navegadores).</li>
+                        </ul>
+                        <p class="pt-2">Podés administrar tus equipos vinculados desde la sección "Mis dispositivos" en el portal web de Sensa.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span class="font-semibold">¿Puedo usar la app con root o jailbreak?</span>
+                        <span class="icon text-xl brand-cyan">+</span>
+                    </summary>
+                    <div class="faq-content text-slate-300">
+                        <p>No. Por razones de seguridad y para proteger el contenido, no podrás acceder a LARAPLAY desde dispositivos con firmware modificado, permisos de superusuario (root) o jailbreak.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span class="font-semibold">¿Cuánto Internet consume el servicio?</span>
+                        <span class="icon text-xl brand-cyan">+</span>
+                    </summary>
+                    <div class="faq-content text-slate-300 space-y-3">
+                       <p>Recomendamos al menos 2 Mbps por dispositivo para una buena experiencia. El consumo real puede variar según la calidad (SD o HD) y el dispositivo.</p>
+                       <p>Recordá que si usás tu conexión 3G/4G, el servicio consumirá datos de tu plan móvil. Te sugerimos conectarte a una red Wi-Fi para evitarlo.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>
+                        <span class="font-semibold">¿Puedo ver un programa que ya empezó?</span>
+                        <span class="icon text-xl brand-cyan">+</span>
+                    </summary>
+                    <div class="faq-content text-slate-300">
+                       <p>¡Sí! Muchos canales permiten la función “Ver desde el inicio”. Buscá el ícono correspondiente en la guía interactiva para reiniciar un programa que ya está en vivo.</p>
+                    </div>
+                </details>
+
+            </div>
+        </div>
         <!-- ================= FIN DE LA NUEVA SECCIÓN ================= -->
 
 
@@ -174,5 +271,20 @@
             <p class="text-xs text-white/50">&copy; 2025 LARANET.</p>
         </div>
     </div>
+    
+    <script>
+        // Pequeño script para manejar el ícono del acordeón
+        const details = document.querySelectorAll('.faq-item');
+        details.forEach(item => {
+            item.addEventListener('toggle', event => {
+                const icon = item.querySelector('.icon');
+                if (item.open) {
+                    icon.textContent = '×';
+                } else {
+                    icon.textContent = '+';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
