@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LARAPLAY | Centro de Ayuda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .brand-gradient {
+            background: #2c1e5a;
+            background: linear-gradient(145deg, #2c1e5a 0%, #6a3093 100%);
+        }
+        .brand-cyan {
+            color: #00f6ff;
+        }
+        .link-card {
+            background: rgba(17, 24, 39, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            text-decoration: none; /* Para que los links no se subrayen */
+        }
+        .link-card:hover {
+            transform: translateY(-5px);
+            background: rgba(17, 24, 39, 0.7);
+            border-color: rgba(0, 246, 255, 0.5);
+        }
+        .link-card h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .link-card p {
+            flex-grow: 1;
+            color: #d1d5db; /* Un gris más claro para mejor lectura */
+        }
+        .link-card .link-text {
+            color: #00f6ff;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        .button-cyan {
+            background-color: #00bcd4;
+            color: #ffffff;
+            font-weight: 600;
+            border-radius: 9999px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 188, 212, 0.4);
+            display: inline-block;
+        }
+        .button-cyan:hover {
+            background-color: #00dcf2;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 188, 212, 0.5);
+        }
+    </style>
+</head>
+<body class="brand-gradient text-white min-h-screen">
+    <div class="max-w-4xl mx-auto p-4 sm:p-8">
+
+        <!-- Logo y Título -->
+        <div class="text-center mb-12">
+            <img src="https://i.postimg.cc/RhdRBFMb/LARAPLAY-Sin-fondo.png" alt="Logo de LARAPLAY" class="w-48 mx-auto mb-4">
+            <h1 class="text-3xl md:text-4xl font-bold">Centro de Ayuda y Links Útiles</h1>
+            <p class="text-slate-300 mt-2">Todo lo que necesitás para aprovechar al máximo tu servicio.</p>
+        </div>
+
+        <!-- Sección de Manuales y Guías -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-center brand-cyan">Manuales y Guías</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Card: Manual de Uso -->
+                <a href="#" target="_blank" class="link-card"> <!-- REEMPLAZAR # CON EL LINK -->
+                    <h3>Manual de Uso de la App</h3>
+                    <p class="text-sm mt-2 mb-4">Aprendé a grabar, crear perfiles, usar el control parental y mucho más.</p>
+                    <span class="link-text">Ver manual →</span>
+                </a>
+
+                <!-- Card: Guía de Instalación -->
+                <a href="#" target="_blank" class="link-card"> <!-- REEMPLAZAR # CON EL LINK -->
+                    <h3>Cómo Instalar la App</h3>
+                    <p class="text-sm mt-2 mb-4">Seguí los pasos para instalar LARAPLAY en tu Smart TV, Celular o Tablet.</p>
+                    <span class="link-text">Ver guía →</span>
+                </a>
+
+                <!-- Card: Alcance del Servicio -->
+                <a href="#" target="_blank" class="link-card"> <!-- REEMPLAZAR # CON EL LINK -->
+                    <h3>Alcance de tu Servicio</h3>
+                    <p class="text-sm mt-2 mb-4">Conocé la cantidad de dispositivos, grabaciones y funciones incluidas en tu plan.</p>
+                    <span class="link-text">Ver detalle →</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Sección de Accesos Directos -->
+        <div class="mb-12">
+             <h2 class="text-2xl font-bold mb-6 text-center brand-cyan">Accesos Directos</h2>
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                 <a href="https://player.sensa.com.ar/" target="_blank" class="link-card">
+                    <h3>Ver TV desde tu Compu</h3>
+                    <p class="text-sm mt-2 mb-4">Accedé al reproductor web para ver todos los canales en vivo.</p>
+                    <span class="link-text">Ir al reproductor →</span>
+                </a>
+                 <a href="https://www.sensa.com.ar/" target="_blank" class="link-card">
+                    <h3>Administrar tu Cuenta</h3>
+                    <p class="text-sm mt-2 mb-4">Gestioná tus dispositivos y perfiles desde el portal de Sensa.</p>
+                    <span class="link-text">Ir al portal →</span>
+                </a>
+                <a href="https://my.visme.co/view/76njx6n7-4qk5y7r6zewr5r1v#s1" target="_blank" class="link-card">
+                    <h3>Grilla de Canales</h3>
+                    <p class="text-sm mt-2 mb-4">Consultá la grilla actualizada para no perderte ninguno de tus programas.</p>
+                    <span class="link-text">Ver grilla →</span>
+                </a>
+             </div>
+        </div>
+
+        <!-- Contacto -->
+        <div class="text-center bg-slate-900/50 border border-white/10 rounded-3xl p-8">
+            <h2 class="text-2xl font-bold mb-2">¿Todavía tenés dudas?</h2>
+            <p class="text-slate-300 mb-6">Estamos para ayudarte. ¡Escribinos!</p>
+            <a href="https://wa.me/5491123948816" target="_blank" class="button-cyan py-3 px-8 text-lg">
+                Contactar por WhatsApp
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center pt-8 mt-8">
+            <p class="text-xs text-white/50">&copy; 2024 LARANET.</p>
+        </div>
+    </div>
+</body>
+</html>
