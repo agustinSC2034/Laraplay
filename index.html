@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LARAPLAY | Centro de Ayuda</title>
+    <link rel="icon" type="image/png" href="https://www.it-tel.com.ar/img/Lara_logo_circulo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +15,11 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-        /* Contenedor del fondo animado */
         #particles-js {
             position: fixed;
             width: 100%;
             height: 100%;
-            z-index: -1; /* Lo ponemos detrás de todo */
+            z-index: -1;
             background: #2c1e5a;
             background: linear-gradient(145deg, #2c1e5a 0%, #6a3093 100%);
         }
@@ -36,7 +36,7 @@
             flex-direction: column;
             height: 100%;
             text-decoration: none;
-            backdrop-filter: blur(4px); /* Efecto de desenfoque para el fondo */
+            backdrop-filter: blur(4px);
         }
         .link-card:hover {
             transform: translateY(-5px);
@@ -57,6 +57,11 @@
             font-weight: 600;
             font-size: 0.875rem;
         }
+        .device-card img {
+            height: 48px;
+            margin: 0 auto 0.5rem auto;
+            object-fit: contain; /* Asegura que los logos no se deformen */
+        }
         .button-cyan {
             background-color: #00bcd4;
             color: #ffffff;
@@ -71,7 +76,6 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0, 188, 212, 0.5);
         }
-        /* Estilos para el acordeón de FAQ */
         .faq-item summary {
             display: flex;
             justify-content: space-between;
@@ -115,7 +119,7 @@
 
         <!-- Logo y Título -->
         <div class="text-center mb-12">
-            <img src="https://i.postimg.cc/RhdRBFMb/LARAPLAY-Sin-fondo.png" alt="Logo de LARAPLAY" class="w-48 mx-auto mb-4">
+            <img src="https://www.it-tel.com.ar/img/laraplay_logo.png" alt="Logo de LARAPLAY" class="w-48 mx-auto mb-4">
             <h1 class="text-3xl md:text-4xl font-bold">Centro de Ayuda y Links Útiles</h1>
             <p class="text-slate-300 mt-2">Todo lo que necesitás para aprovechar al máximo tu servicio.</p>
         </div>
@@ -124,17 +128,19 @@
         <div class="mb-12">
             <h2 class="text-2xl font-bold mb-6 text-center brand-cyan">Manuales y Guías</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <a href="https://agustinsc2034.github.io/Laraplay/manuales/Manual%20de%20Uso%20Laraplay.pdf" target="_blank" class="link-card">
-                    <h3>Manual de Uso de la App</h3>
+                <!-- LINK ACTUALIZADO -->
+                <a href="https://drive.google.com/file/d/1vpI9lnq-4iAu7H3NaHJBIldGonot8fWG/view?usp=drive_link" target="_blank" class="link-card">
+                    <h3>Manual del Abonado</h3>
                     <p class="text-sm mt-2 mb-4">Aprendé a grabar, crear perfiles, usar el control parental y mucho más.</p>
                     <span class="link-text">Ver manual →</span>
                 </a>
-                <a href="https://agustinsc2034.github.io/Laraplay/manuales/Como%20instalar%20la%20app%20en%20TV%20y%20celulares.pdf" target="_blank" class="link-card">
+                <a href="https://drive.google.com/file/d/1uIObs55UAb7eWF2C6ySPMP-LvYmHAX2Q/view?usp=drive_link" target="_blank" class="link-card">
                     <h3>Cómo Instalar la App</h3>
                     <p class="text-sm mt-2 mb-4">Seguí los pasos para instalar LARAPLAY en tu Smart TV, Celular o Tablet.</p>
                     <span class="link-text">Ver guía →</span>
                 </a>
-                <a href="https://agustinsc2034.github.io/Laraplay/manuales/Alcance%20del%20servicio.pdf" target="_blank" class="link-card">
+                 <!-- LINK ACTUALIZADO -->
+                <a href="https://drive.google.com/file/d/1Y25a4LPg5xCG6Gbn1905xvRWVopiRBU9/view?usp=sharing" target="_blank" class="link-card">
                     <h3>Alcance de tu Servicio</h3>
                     <p class="text-sm mt-2 mb-4">Conocé la cantidad de dispositivos, grabaciones y funciones incluidas en tu plan.</p>
                     <span class="link-text">Ver detalle →</span>
@@ -147,59 +153,51 @@
              <h2 class="text-2xl font-bold mb-6 text-center brand-cyan">Accesos Directos</h2>
              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                  <a href="https://player.sensa.com.ar/" target="_blank" class="link-card">
-                    <h3>Ver TV desde tu Compu</h3>
-                    <p class="text-sm mt-2 mb-4">Accedé al reproductor web para ver todos los canales en vivo.</p>
-                    <span class="link-text">Ir al reproductor →</span>
-                </a>
+                     <h3>Ver TV desde tu Compu</h3>
+                     <p class="text-sm mt-2 mb-4">Accedé al reproductor web para ver todos los canales en vivo.</p>
+                     <span class="link-text">Ir al reproductor →</span>
+                 </a>
                  <a href="https://www.sensa.com.ar/" target="_blank" class="link-card">
-                    <h3>Administrar tu Cuenta</h3>
-                    <p class="text-sm mt-2 mb-4">Gestioná tus dispositivos y perfiles desde el portal de Sensa.</p>
-                    <span class="link-text">Ir al portal →</span>
-                </a>
-                <a href="https://my.visme.co/view/76njx6n7-4qk5y7r6zewr5r1v#s1" target="_blank" class="link-card">
-                    <h3>Grilla de Canales</h3>
-                    <p class="text-sm mt-2 mb-4">Consultá la grilla actualizada para no perderte ninguno de tus programas.</p>
-                    <span class="link-text">Ver grilla →</span>
-                </a>
+                     <h3>Administrar tu Cuenta</h3>
+                     <p class="text-sm mt-2 mb-4">Gestioná tus dispositivos y perfiles desde el portal de Sensa.</p>
+                     <span class="link-text">Ir al portal →</span>
+                 </a>
+                 <a href="Grilla.pdf" target="_blank" class="link-card">
+                     <h3>Grilla de Canales</h3>
+                     <p class="text-sm mt-2 mb-4">Consultá la grilla actualizada para no perderte ninguno de tus programas.</p>
+                     <span class="link-text">Ver grilla →</span>
+                 </a>
              </div>
         </div>
 
-        <!-- Sección de Dispositivos Compatibles -->
+        <!-- =========== SECCIÓN DE DISPOSITIVOS COMPATIBLES (MODIFICADA) =========== -->
         <div class="mb-12">
-            <h2 class="text-2xl font-bold mb-6 text-center brand-cyan">Dispositivos Compatibles</h2>
-            <div class="bg-slate-900/50 border border-white/10 rounded-3xl p-6 sm:p-8 max-w-2xl mx-auto backdrop-filter backdrop-blur-sm">
-                <ul class="space-y-3 text-slate-200">
-                    <li class="flex items-start">
-                        <svg class="w-5 h-5 brand-cyan mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <div><strong>Dispositivos móviles:</strong> Android 4.0+ | iOS 9.0+</div>
-                    </li>
-                     <li class="flex items-start">
-                        <svg class="w-5 h-5 brand-cyan mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <div><strong>PC (Navegador web):</strong> Compatible con todos los navegadores modernos.</div>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="w-5 h-5 brand-cyan mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <div><strong>Chromecast</strong></div>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="w-5 h-5 brand-cyan mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <div><strong>Android TV:</strong> Se recomienda Android 9 y posteriores.</div>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="w-5 h-5 brand-cyan mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <div><strong>Amazon Fire TV:</strong> Se recomienda Fire OS 6 y posteriores.</div>
-                    </li>
-                     <li class="flex items-start">
-                        <svg class="w-5 h-5 brand-cyan mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <div><strong>Roku</strong></div>
-                    </li>
-                     <li class="flex items-start">
-                        <svg class="w-5 h-5 brand-cyan mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <div><strong>Apple TV:</strong> A partir de la versión 13.4</div>
-                    </li>
-                </ul>
+            <h2 class="text-2xl font-bold mb-2 text-center brand-cyan">¿Tu dispositivo es compatible?</h2>
+            <p class="text-center text-slate-300 mb-6">Haz clic en tu equipo para ver la guía y verificar la versión.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <!-- Tarjeta Android TV con LOGO NUEVO -->
+                <a href="Instructivo_android.html" target="_blank" class="link-card device-card p-4 items-center justify-center">
+                    <img src="https://rca.com.ar/uploads-wp/2022/06/Logos_android-01-1024x454.png" alt="Android TV" onerror="this.style.display='none'">
+                    <h3 class="text-sm font-bold mt-auto">Android TV</h3>
+                </a>
+                <!-- Tarjeta Amazon Fire TV con LOGO NUEVO -->
+                <a href="Instructivo_amazon.html" target="_blank" class="link-card device-card p-4 items-center justify-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Amazon_Fire_TV_logo_%28New%29.png" alt="Amazon Fire TV" onerror="this.style.display='none'">
+                     <h3 class="text-sm font-bold mt-auto">Fire TV</h3>
+                </a>
+                <!-- Tarjeta Apple TV con LOGO NUEVO -->
+                <a href="Instructivo_apple.html" target="_blank" class="link-card device-card p-4 items-center justify-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Apple_TV_Plus_Logo.svg/2560px-Apple_TV_Plus_Logo.svg.png" alt="Apple TV" onerror="this.style.display='none'">
+                     <h3 class="text-sm font-bold mt-auto">Apple TV</h3>
+                </a>
+                <!-- Tarjeta Móviles con LOGO NUEVO -->
+                <a href="Instructivo_celulares.html" target="_blank" class="link-card device-card p-4 items-center justify-center">
+                     <img src="img/logos/ios_android.png" alt="Móviles Android" onerror="this.style.display='none'">
+                     <h3 class="text-sm font-bold mt-auto">Celulares</h3>
+                </a>
             </div>
         </div>
+        <!-- ================= FIN DE LA SECCIÓN MODIFICADA ================= -->
 
         <!-- SECCIÓN DE PREGUNTAS FRECUENTES (FAQ) -->
         <div class="mb-12">
@@ -287,7 +285,7 @@
         particlesJS('particles-js', {
             "particles": {
                 "number": {
-                    "value": 80, // Aumentamos el número de partículas
+                    "value": 80,
                     "density": {
                         "enable": true,
                         "value_area": 800
@@ -300,7 +298,7 @@
                     "type": "circle",
                 },
                 "opacity": {
-                    "value": 0.7, // Aumentamos la opacidad de las partículas
+                    "value": 0.7,
                     "random": true,
                 },
                 "size": {
@@ -311,12 +309,12 @@
                     "enable": true,
                     "distance": 150,
                     "color": "#ffffff",
-                    "opacity": 0.2, // Aumentamos la opacidad de las líneas
+                    "opacity": 0.2,
                     "width": 1
                 },
                 "move": {
                     "enable": true,
-                    "speed": 1.5, // Aumentamos un poco la velocidad
+                    "speed": 1.5,
                     "direction": "none",
                     "random": true,
                     "straight": false,
