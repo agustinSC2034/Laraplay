@@ -146,7 +146,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex-shrink-0">
-                    <a href="/" title="Volver a la página principal">
+                    <a href="/index.html" title="Volver a la página principal">
                         <img class="h-12" src="https://www.it-tel.com.ar/img/laraplay_logo.png" alt="Laraplay Logo">
                     </a>
                 </div>
@@ -166,21 +166,6 @@
             <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">Centro de Ayuda</h1>
             <p class="text-slate-300 mt-4 text-lg max-w-2xl mx-auto">Encontrá respuestas, guías y todo lo que necesitás
                 para aprovechar al máximo tu servicio.</p>
-            <div class="mt-8 max-w-xl mx-auto">
-                <div class="relative">
-                    <span class="absolute inset-y-0 left-0 flex items-center pl-4">
-                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                            fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </span>
-                    <input id="faq-search" type="search"
-                        placeholder="Buscá por palabra clave (ej: contraseña, roku, grabar...)"
-                        class="w-full py-3.5 pl-11 pr-4 bg-slate-800/60 border border-slate-700 rounded-full focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 outline-none transition duration-300">
-                </div>
-            </div>
         </header>
 
         <!-- Sección de Recursos Principales -->
@@ -283,19 +268,19 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
                 <a href="Instructivo_android.html" target="_blank"
                     class="link-card p-4 items-center justify-center text-center">
-                    <img src="/img/logos/Android_white.png" alt="Android TV" class="h-10 mx-auto mb-3 object-contain"
+                    <img src="img/logos/Android_white.png" alt="Android TV" class="h-10 mx-auto mb-3 object-contain"
                         onerror="this.style.display='none'">
                     <h3 class="text-sm font-bold mt-auto text-white">Android TV</h3>
                 </a>
                 <a href="Instructivo_amazon.html" target="_blank"
                     class="link-card p-4 items-center justify-center text-center">
-                    <img src="/img/logos/fire_tv_white.jpg" alt="Amazon Fire TV"
-                        class="h-10 mx-auto mb-3 object-contain" onerror="this.style.display='none'">
+                    <img src="img/logos/fire_tv_white.jpg" alt="Amazon Fire TV"
+                        class="h-11 mx-auto mb-3 object-contain" onerror="this.style.display='none'">
                     <h3 class="text-sm font-bold mt-auto text-white">Fire TV</h3>
                 </a>
                 <a href="Instructivo_apple.html" target="_blank"
                     class="link-card p-4 items-center justify-center text-center">
-                    <img src="/img/logos/apple_white.png" alt="Apple TV" class="h-10 mx-auto mb-3 object-contain"
+                    <img src="img/logos/apple_white.png" alt="Apple TV" class="h-10 mx-auto mb-3 object-contain"
                         onerror="this.style.display='none'">
                     <h3 class="text-sm font-bold mt-auto text-white">Apple TV</h3>
                 </a>
@@ -325,7 +310,22 @@
         <section class="mb-16">
             <h2 class="text-3xl font-bold mb-8 text-center">Preguntas Frecuentes</h2>
             <div id="faq-container" class="max-w-3xl mx-auto space-y-4">
-
+                  <div class="mt-8 max-w-xl mx-auto">
+                <div class="relative">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-4">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                    <input id="faq-search" type="search"
+                        placeholder="Buscá por palabra clave (ej: contraseña, roku, grabar...)"
+                        class="w-full py-3.5 pl-11 pr-4 bg-slate-800/60 border border-slate-700 rounded-full focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 outline-none transition duration-300">
+                </div>
+            </div>
+            <br>
                 <details class="faq-item">
                     <summary><span class="font-semibold text-white">Olvidé mi contraseña, ¿cómo la recupero?</span><span
                             class="icon"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
