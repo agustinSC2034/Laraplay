@@ -115,6 +115,15 @@
                     <a href="#"><img class="h-12" src="https://www.it-tel.com.ar/img/laraplay_logo.png"
                             alt="Laraplay Logo" /></a>
                 </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a href="pages/Help_center.html"
@@ -128,7 +137,27 @@
                 </div>
             </div>
         </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="flex flex-col items-center px-2 pt-2 pb-3 space-y-3 sm:px-3">
+                <a href="pages/Help_center.html"
+                    class="block px-4 py-2 rounded-full text-sm font-bold text-white text-center"
+                    style="background-color: #c1268c; transition: all 0.3s ease;"
+                    onmouseover="this.style.backgroundColor='#a11d73'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 30px rgba(193, 38, 140, 0.7)';" 
+                    onmouseout="this.style.backgroundColor='#c1268c'; this.style.transform='scale(1)'; this.style.boxShadow='none';">Centro de Ayuda</a>
+                <a target="_blank" href="https://www.sensa.com.ar/?p=login"
+                    class="block cta-button text-white px-4 py-2 rounded-full text-sm font-bold text-center">Mi Cuenta</a>
+            </div>
+        </div>
     </nav>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
     <!-- Sección Principal (Hero) -->
     <header class="relative overflow-hidden">
@@ -147,7 +176,7 @@
                 Demand, y la pasión del fútbol argentino en todos tus dispositivos.
             </p>
             <div class="mt-10">
-                <a href="#planes" class="cta-button text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg">Ver
+                <a href="#planes" class="cta-button text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg" onclick="event.preventDefault(); document.querySelector('#planes').scrollIntoView({ behavior: 'smooth' });">Ver
                     Plan y Precios</a>
             </div>
         </div>
