@@ -103,12 +103,8 @@
 
 <body class="bg-gray-900">
     <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/5491128177964" target="_blank"
-        class="fixed bottom-5 right-5 z-50 p-3 bg-green-500 rounded-full shadow-lg hover:scale-110 transition-transform">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path
-                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.902-.539-5.571-1.501L0 24h.057zM8.252 6.809c.219-.484.144-1.103-.231-1.444a.525.525 0 0 0-.649-.074s-1.49.884-2.298 1.798c-.859.98-1.289 2.06-1.291 2.923-.002.864.21 1.748.643 2.54l.116.216c.357.67.788 1.34 1.31 1.958.581.68 1.285 1.309 2.073 1.838l.22.146c.84.45 1.776.702 2.723.704h.001c.99 0 1.967-.279 2.815-.81l.173-.104c.328-.198.549-.32.697-.487.147-.164.232-.335.276-.465.132-.397.042-.969-.145-1.319l-.04-.07c-.453-.836-.93-1.64-1.38-2.432l-.21-.365c-.13-.225-.262-.45-.392-.676-.134-.232-.206-.499-.206-.774v-.001c.002-.279.079-.553.226-.798l.042-.069c.125-.213.268-.413.43-.598.158-.181.304-.35.438-.507l.088-.103c.125-.146.233-.276.326-.41l.035-.05c.162-.232.32-.477.414-.753.094-.276.15-.592.15-.934a4.12 4.12 0 0 0-.39-2.275c-.126-.339-.304-.66-.523-.954l-.014-.02c-.484-.66-1.15-1.213-1.92-1.625l-.16-.086c-.636-.326-1.32-.497-2.02-.498-1.52.001-2.951.688-3.987 1.859z" />
-        </svg>
+    <a href="https://wa.me/5491128177964" target="_blank" class="fixed bottom-5 right-5 z-50 p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 hover:scale-110 transition-transform">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="h-8 w-8">
     </a>
 
     <!-- Barra de Navegación Superior -->
@@ -122,8 +118,10 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a href="pages/Help_center.html"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Centro de
-                            Ayuda</a>
+                            class="px-4 py-2 rounded-full text-sm font-bold"
+                            style="background-color: #c1268c; color: white; transition: all 0.3s ease; text-align: center; display: inline-block;"
+                            onmouseover="this.style.backgroundColor='#a11d73'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 30px rgba(193, 38, 140, 0.7)';" 
+                            onmouseout="this.style.backgroundColor='#c1268c'; this.style.transform='scale(1)'; this.style.boxShadow='none';">Centro de Ayuda</a>
                         <a target="_blank" href="https://www.sensa.com.ar/?p=login"
                             class="cta-button text-white px-4 py-2 rounded-full text-sm font-bold">Mi Cuenta</a>
                     </div>
@@ -274,7 +272,8 @@
                 </ul>
             </div>
             <div
-                class="w-full aspect-video section-bg rounded-2xl overflow-hidden flex items-center justify-center p-0">
+                class="w-full aspect-video section-bg rounded-2xl overflow-hidden flex items-center justify-center p-0 transition-transform duration-300 hover:brightness-110"
+                style="border-color: rgba(0, 224, 240, 0.5); box-shadow: 0 0 25px rgba(0, 224, 240, 0.1);">
                 <video src="video/sensa_tv.mp4" autoplay muted loop playsinline poster="img/poster/Sensa_tv.png"
                     class="w-full h-full object-cover">
                     Tu navegador no soporta videos HTML5.
@@ -346,10 +345,10 @@
                     <span class="text-6xl font-extrabold text-white">$6.999</span>
                     <span class="text-xl font-medium text-gray-400">/mes</span>
                 </div>
-                <br>
+                <br />
                 <p class="mt-2 text-sm text-gray-400">(Precio final por 12 meses)</p>
-                <br><br>
-                <a href="#contacto"
+                <br /><br />
+                <a href="https://wa.me/5491128177964" target="_blank"
                     class="mt-8 cta-button text-white w-full px-8 py-4 rounded-full text-lg font-bold shadow-lg">¡Contratar
                     ahora!</a>
             </div>
@@ -372,9 +371,7 @@
                 <!-- Pack HBO (ahora Max) -->
                 <div
                     class="section-bg rounded-2xl p-8 text-center hover:-translate-y-2 transition-transform duration-300">
-                    <img class="h-20 mx-auto mb-4"
-                        src="img/logos/max.png"
-                        alt="Logo Max" />
+                    <img class="h-20 mx-auto mb-4" src="img/logos/max.png" alt="Logo Max" />
                     <p class="text-gray-300">
                         Incluye los canales premium de HBO y acceso a la plataforma de
                         streaming Max.
@@ -383,15 +380,15 @@
                         <span class="text-4xl font-extrabold text-white">$4.999</span><span
                             class="text-lg font-medium text-gray-400">/mes</span>
                     </div>
-                    <button class="secondary-button w-full px-8 py-3 rounded-full font-bold">
-                        Agregar Pack
-                    </button>
+                    <br>
+                    <a href="https://wa.me/5491128177964" target="_blank" class="cta-button w-full px-8 py-3 rounded-full font-bold text-white">
+                        Contactanos
+                    </a>
                 </div>
                 <!-- Pack Universal+ -->
                 <div
                     class="section-bg rounded-2xl p-8 text-center hover:-translate-y-2 transition-transform duration-300">
-                    <img class="h-20 mx-auto mb-4" src="img/logos/universal+.png"
-                        alt="Logo Universal+" />
+                    <img class="h-20 mx-auto mb-4" src="img/logos/universal+.png" alt="Logo Universal+" />
                     <p class="text-gray-300">
                         Todos los canales premium de Universal+ y acceso a su plataforma
                         de streaming.
@@ -400,12 +397,13 @@
                         <span class="text-4xl font-extrabold text-white">$4.999</span><span
                             class="text-lg font-medium text-gray-400">/mes</span>
                     </div>
-                    <button class="secondary-button w-full px-8 py-3 rounded-full font-bold">
-                        Agregar Pack
-                    </button>
+                    <br>
+                    <a href="https://wa.me/5491128177964" target="_blank" class="cta-button w-full px-8 py-3 rounded-full font-bold text-white">
+                        Contactanos
+                    </a>
                 </div>
             </div>
-            <br>
+            <br />
             <p class="text-center text-xs text-gray-400 mt-8">
                 Los packs premium deben contratarse junto con el abono básico de
                 Laraplay TV.
@@ -463,35 +461,44 @@
                 Verificá si tu TV es compatible
             </h2>
             <p class="mt-4 text-xl text-gray-400">
-                La app es compatible con dispositivos Android TV, Samsung TV, Apple TV, Roku, PC, y Chromecast, hacé clic en el logo de tu dispositivo para ver la guía y verificar si es
-                compatible.
+                La app es compatible con dispositivos Android TV, Samsung TV, Apple
+                TV, Roku, PC, y Chromecast, hacé clic en el logo de tu dispositivo
+                para ver la guía y verificar si es compatible.
             </p>
             <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
-    <a href="#LINK-A-INSTRUCTIVO-ANDROID"
-        class="section-bg rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 transition-transform duration-300">
-        <img src="img/logos/Android_white.png" alt="Android TV" class="h-14 w-15">
-        <span class="mt-4 text-white font-semibold">Android TV</span>
-    </a>
-    <a href="#LINK-A-INSTRUCTIVO-FIRETV"
-        class="section-bg rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 transition-transform duration-300">
-        <img src="img/logos/fire_tv_white.jpg" alt="Fire TV" class="h-14 w-18">
-        <span class="mt-4 text-white font-semibold">Fire TV</span>
-    </a>
-    <a href="#LINK-A-INSTRUCTIVO-APPLE"
-        class="section-bg rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 transition-transform duration-300">
-        <img src="img/logos/apple_white.png" alt="Apple TV" class="h-14 w-17">
-        <span class="mt-4 text-white font-semibold">Apple TV</span>
-    </a>
-    <a href="#LINK-A-INSTRUCTIVO-CELULARES" class="section-bg rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 transition-transform duration-300"><svg class="h-12 w-12 text-white" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> <path d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z" /> </svg><span class="mt-4 text-white font-semibold">Móviles</span></a>
-</div>
+                <a href="#LINK-A-INSTRUCTIVO-ANDROID"
+                    class="section-bg rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 transition-transform duration-300">
+                    <img src="img/logos/Android_white.png" alt="Android TV" class="h-14 w-15" />
+                    <span class="mt-4 text-white font-semibold">Android TV</span>
+                </a>
+                <a href="#LINK-A-INSTRUCTIVO-FIRETV"
+                    class="section-bg rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 transition-transform duration-300">
+                    <img src="img/logos/fire_tv_white.jpg" alt="Fire TV" class="h-14 w-18" />
+                    <span class="mt-4 text-white font-semibold">Fire TV</span>
+                </a>
+                <a href="#LINK-A-INSTRUCTIVO-APPLE"
+                    class="section-bg rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 transition-transform duration-300">
+                    <img src="img/logos/apple_white.png" alt="Apple TV" class="h-14 w-17" />
+                    <span class="mt-4 text-white font-semibold">Apple TV</span>
+                </a>
+                <a href="#LINK-A-INSTRUCTIVO-CELULARES"
+                    class="section-bg rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 transition-transform duration-300"><svg
+                        class="h-12 w-12 text-white" viewBox="0 0 24 24" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z" />
+                    </svg><span class="mt-4 text-white font-semibold">Móviles</span></a>
+            </div>
             <p class="mt-8 text-gray-400">
                 La app es compatible con todos los modelos de
                 <strong>Roku</strong> y <strong>Chromecast</strong>.
             </p>
             <span class="mt-2 text-gray-400">
-                Podes verificar si tu tv es compatible con la app Sensa buscandola dentro de los dispositivos homologados
-                <br><br>
-                <p>https://drive.google.com/drive/folders/12rY281E3Wyifdzl66vFdrLYNvq3vsoqj?usp=sharing</p>
+                Podes verificar si tu tv es compatible con la app Sensa buscandola
+                dentro de los 
+                <a href="https://drive.google.com/drive/folders/12rY281E3Wyifdzl66vFdrLYNvq3vsoqj?usp=sharing" target="_blank" class="text-cyan-400 underline hover:text-cyan-300 transition-colors duration-300">
+                    dispositivos homologados
+                </a>.
             </span>
         </div>
     </section>
