@@ -103,7 +103,8 @@
 
 <body class="bg-gray-900">
     <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/5491128177964" target="_blank" class="fixed bottom-5 right-5 z-50 p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 hover:scale-110 transition-transform">
+    <a href="https://wa.me/5491128177964" target="_blank"
+        class="fixed bottom-5 right-5 z-50 p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 hover:scale-110 transition-transform">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="h-8 w-8">
     </a>
 
@@ -126,26 +127,28 @@
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="pages/Help_center.html"
-                            class="px-4 py-2 rounded-full text-sm font-bold"
+                        <a href="pages/Help_center.html" class="px-4 py-2 rounded-full text-sm font-bold"
                             style="background-color: #c1268c; color: white; transition: all 0.3s ease; text-align: center; display: inline-block;"
-                            onmouseover="this.style.backgroundColor='#a11d73'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 30px rgba(193, 38, 140, 0.7)';" 
-                            onmouseout="this.style.backgroundColor='#c1268c'; this.style.transform='scale(1)'; this.style.boxShadow='none';">Centro de Ayuda</a>
+                            onmouseover="this.style.backgroundColor='#a11d73'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 30px rgba(193, 38, 140, 0.7)';"
+                            onmouseout="this.style.backgroundColor='#c1268c'; this.style.transform='scale(1)'; this.style.boxShadow='none';">Centro
+                            de Ayuda</a>
                         <a target="_blank" href="https://www.sensa.com.ar/?p=login"
                             class="cta-button text-white px-4 py-2 rounded-full text-sm font-bold">Mi Cuenta</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden">
+        <div id="mobile-menu" class="hidden md:hidden transition-all duration-300 transform -translate-y-4 opacity-0">
             <div class="flex flex-col items-center px-2 pt-2 pb-3 space-y-3 sm:px-3">
                 <a href="pages/Help_center.html"
                     class="block px-4 py-2 rounded-full text-sm font-bold text-white text-center"
                     style="background-color: #c1268c; transition: all 0.3s ease;"
-                    onmouseover="this.style.backgroundColor='#a11d73'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 30px rgba(193, 38, 140, 0.7)';" 
-                    onmouseout="this.style.backgroundColor='#c1268c'; this.style.transform='scale(1)'; this.style.boxShadow='none';">Centro de Ayuda</a>
+                    onmouseover="this.style.backgroundColor='#a11d73'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 30px rgba(193, 38, 140, 0.7)';"
+                    onmouseout="this.style.backgroundColor='#c1268c'; this.style.transform='scale(1)'; this.style.boxShadow='none';">Centro
+                    de Ayuda</a>
                 <a target="_blank" href="https://www.sensa.com.ar/?p=login"
-                    class="block cta-button text-white px-4 py-2 rounded-full text-sm font-bold text-center">Mi Cuenta</a>
+                    class="block cta-button text-white px-4 py-2 rounded-full text-sm font-bold text-center">Mi
+                    Cuenta</a>
             </div>
         </div>
     </nav>
@@ -155,9 +158,27 @@
         const mobileMenu = document.getElementById('mobile-menu');
 
         mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                setTimeout(() => {
+                    mobileMenu.classList.remove('-translate-y-4', 'opacity-0');
+                    mobileMenu.classList.add('translate-y-0', 'opacity-100');
+                }, 10);
+            } else {
+                mobileMenu.classList.remove('translate-y-0', 'opacity-100');
+                mobileMenu.classList.add('-translate-y-4', 'opacity-0');
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300);
+            }
         });
     </script>
+    <style>
+        /* Extra: Ensure the mobile menu animates smoothly */
+        #mobile-menu {
+            will-change: transform, opacity;
+        }
+    </style>
 
     <!-- Sección Principal (Hero) -->
     <header class="relative overflow-hidden">
@@ -176,7 +197,8 @@
                 Demand, y la pasión del fútbol argentino en todos tus dispositivos.
             </p>
             <div class="mt-10">
-                <a href="#planes" class="cta-button text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg" onclick="event.preventDefault(); document.querySelector('#planes').scrollIntoView({ behavior: 'smooth' });">Ver
+                <a href="#planes" class="cta-button text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg"
+                    onclick="event.preventDefault(); document.querySelector('#planes').scrollIntoView({ behavior: 'smooth' });">Ver
                     Plan y Precios</a>
             </div>
         </div>
@@ -300,8 +322,7 @@
                     </li>
                 </ul>
             </div>
-            <div
-                class="w-full aspect-video section-bg rounded-2xl overflow-hidden flex items-center justify-center p-0 transition-transform duration-300 hover:brightness-110"
+            <div class="w-full aspect-video section-bg rounded-2xl overflow-hidden flex items-center justify-center p-0 transition-transform duration-300 hover:brightness-110"
                 style="border-color: rgba(0, 224, 240, 0.5); box-shadow: 0 0 25px rgba(0, 224, 240, 0.1);">
                 <video src="video/sensa_tv.mp4" autoplay muted loop playsinline poster="img/poster/Sensa_tv.png"
                     class="w-full h-full object-cover">
@@ -320,7 +341,7 @@
                 </h2>
                 <p class="mt-4 text-xl text-gray-400">
                     Tu cuenta te permite ver Laraplay donde más te guste, ¡y al mismo
-                    tiempo!
+                    tiempo en hasta 6 dispositivos diferentes!
                 </p>
             </div>
             <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -410,7 +431,8 @@
                             class="text-lg font-medium text-gray-400">/mes</span>
                     </div>
                     <br>
-                    <a href="https://wa.me/5491128177964" target="_blank" class="cta-button w-full px-8 py-3 rounded-full font-bold text-white">
+                    <a href="https://wa.me/5491128177964" target="_blank"
+                        class="cta-button w-full px-8 py-3 rounded-full font-bold text-white">
                         Contactanos
                     </a>
                 </div>
@@ -427,7 +449,8 @@
                             class="text-lg font-medium text-gray-400">/mes</span>
                     </div>
                     <br>
-                    <a href="https://wa.me/5491128177964" target="_blank" class="cta-button w-full px-8 py-3 rounded-full font-bold text-white">
+                    <a href="https://wa.me/5491128177964" target="_blank"
+                        class="cta-button w-full px-8 py-3 rounded-full font-bold text-white">
                         Contactanos
                     </a>
                 </div>
@@ -495,40 +518,43 @@
                 para ver la guía y verificar si es compatible.
             </p>
             <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
-                <a href="#LINK-A-INSTRUCTIVO-ANDROID"
+                <a href="pages/instructivo_android.html" target="_blank"
                     class="section-bg rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 transition-transform duration-300">
                     <img src="img/logos/Android_white.png" alt="Android TV" class="h-14 w-15" />
                     <span class="mt-4 text-white font-semibold">Android TV</span>
                 </a>
-                <a href="#LINK-A-INSTRUCTIVO-FIRETV"
+                <a href="pages/Instructivo_amazon.html" target="_blank"
                     class="section-bg rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 transition-transform duration-300">
                     <img src="img/logos/fire_tv_white.jpg" alt="Fire TV" class="h-14 w-18" />
                     <span class="mt-4 text-white font-semibold">Fire TV</span>
                 </a>
-                <a href="#LINK-A-INSTRUCTIVO-APPLE"
+                <a href="pages/Instructivo_apple.html" target="_blank"
                     class="section-bg rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 transition-transform duration-300">
                     <img src="img/logos/apple_white.png" alt="Apple TV" class="h-14 w-17" />
                     <span class="mt-4 text-white font-semibold">Apple TV</span>
                 </a>
-                <a href="#LINK-A-INSTRUCTIVO-CELULARES"
-                    class="section-bg rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 transition-transform duration-300"><svg
-                        class="h-12 w-12 text-white" viewBox="0 0 24 24" fill="currentColor"
+                <a href="pages/Instructivo_celulares.html" target="_blank"
+                    class="section-bg rounded-2xl p-6 flex flex-col items-center justify-center hover:-translate-y-2 transition-transform duration-300">
+                    <svg class="h-12 w-12 text-white" viewBox="0 0 24 24" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z" />
-                    </svg><span class="mt-4 text-white font-semibold">Móviles</span></a>
+                    </svg>
+                    <span class="mt-4 text-white font-semibold">Móviles</span>
+                </a>
             </div>
-            <p class="mt-8 text-gray-400">
-                La app es compatible con todos los modelos de
-                <strong>Roku</strong> y <strong>Chromecast</strong>.
-            </p>
-            <span class="mt-2 text-gray-400">
-                Podes verificar si tu tv es compatible con la app Sensa buscandola
-                dentro de los 
-                <a href="https://drive.google.com/drive/folders/12rY281E3Wyifdzl66vFdrLYNvq3vsoqj?usp=sharing" target="_blank" class="text-cyan-400 underline hover:text-cyan-300 transition-colors duration-300">
-                    dispositivos homologados
-                </a>.
-            </span>
+        </div>
+        <div class="mt-8 text-gray-400 px-4 sm:px-0 flex justify-center">
+            <div class="text-center">
+            <div class="mt-2 text-gray-400"></div>
+            Podés verificar si tu TV es compatible con la app Sensa buscándola
+            dentro de los
+            <a href="https://drive.google.com/drive/folders/12rY281E3Wyifdzl66vFdrLYNvq3vsoqj?usp=sharing"
+                target="_blank" class="text-cyan-400 underline hover:text-cyan-300 transition-colors duration-300">
+                dispositivos homologados
+            </a>.
+            </div>
+        </div>
         </div>
     </section>
 
@@ -593,15 +619,19 @@
             <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div>
                     <h3 class="text-xl font-bold gradient-text">WhatsApp</h3>
-                    <a href="https://wa.me/5491128177964" target="_blank" class="mt-2 text-lg text-white hover:text-cyan-400 transition-colors duration-300">+54 9 11 2817 7964</a>
+                    <a href="https://wa.me/5491128177964" target="_blank"
+                        class="mt-2 text-lg text-white hover:text-cyan-400 transition-colors duration-300">+54 9 11 2817
+                        7964</a>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold gradient-text">Correo Electrónico</h3>
-                    <a href="mailto:ventas@laranet.com.ar" class="mt-2 text-lg text-white hover:text-cyan-400 transition-colors duration-300">ventas@laranet.com.ar</a>
+                    <a href="mailto:ventas@laranet.com.ar"
+                        class="mt-2 text-lg text-white hover:text-cyan-400 transition-colors duration-300">ventas@laranet.com.ar</a>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold gradient-text">Oficina Comercial</h3>
-                    <a href="https://www.google.com/maps?q=ejemplo+1234" target="_blank" class="mt-2 text-lg text-white hover:text-cyan-400 transition-colors duration-300">Ejemplo 1234</a>
+                    <a href="https://www.google.com/maps?q=ejemplo+1234" target="_blank"
+                        class="mt-2 text-lg text-white hover:text-cyan-400 transition-colors duration-300"></a>
                 </div>
             </div>
         </div>
