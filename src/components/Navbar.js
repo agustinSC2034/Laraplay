@@ -19,13 +19,10 @@ export class Navbar extends HTMLElement {
                     </div>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
-                            <a href="/help/index.html" class="px-4 py-2 rounded-full text-sm font-bold"
-                                style="background-color: #c1268c; color: white; transition: all 0.3s ease; text-align: center; display: inline-block;"
-                                onmouseover="this.style.backgroundColor='#a11d73'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 30px rgba(193, 38, 140, 0.7)';"
-                                onmouseout="this.style.backgroundColor='#c1268c'; this.style.transform='scale(1)'; this.style.boxShadow='none';">Centro
+                            <a href="/help/index.html" class="bg-brand-magenta text-white hover:bg-opacity-80 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-brand-magenta/50 px-4 py-2 rounded-full text-sm font-bold text-center inline-block">Centro
                                 de Ayuda</a>
                             <a target="_blank" href="https://www.sensa.com.ar/?p=login"
-                                class="cta-button text-white px-4 py-2 rounded-full text-sm font-bold">Mi Cuenta</a>
+                                class="bg-brand-cyan text-white hover:bg-opacity-80 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-brand-cyan/50 px-4 py-2 rounded-full text-sm font-bold text-center inline-block">Mi Cuenta</a>
                         </div>
                     </div>
                 </div>
@@ -33,35 +30,13 @@ export class Navbar extends HTMLElement {
             <div id="mobile-menu" class="hidden md:hidden transition-all duration-300 transform -translate-y-4 opacity-0">
                 <div class="flex flex-col items-center px-2 pt-2 pb-3 space-y-3 sm:px-3">
                     <a href="/help/index.html"
-                        class="block px-4 py-2 rounded-full text-sm font-bold text-white text-center"
-                        style="background-color: #c1268c; transition: all 0.3s ease;"
-                        onmouseover="this.style.backgroundColor='#a11d73'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 30px rgba(193, 38, 140, 0.7)';"
-                        onmouseout="this.style.backgroundColor='#c1268c'; this.style.transform='scale(1)'; this.style.boxShadow='none';">Centro
+                        class="block bg-brand-magenta text-white hover:bg-opacity-80 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-brand-magenta/50 px-4 py-2 rounded-full text-sm font-bold text-center">Centro
                         de Ayuda</a>
                     <a target="_blank" href="https://www.sensa.com.ar/?p=login"
-                        class="block cta-button text-white px-4 py-2 rounded-full text-sm font-bold text-center">Mi
+                        class="block bg-brand-cyan text-white hover:bg-opacity-80 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-brand-cyan/50 px-4 py-2 rounded-full text-sm font-bold text-center">Mi
                         Cuenta</a>
                 </div>
             </div>
-            <style>
-                #mobile-menu {
-                    will-change: transform, opacity;
-                }
-                .navbar {
-                    background-color: rgba(12, 10, 29, 0.8);
-                    backdrop-filter: blur(10px);
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-                }
-                .cta-button {
-                    background-color: #00bcd4;
-                    transition: all 0.3s ease;
-                }
-                .cta-button:hover {
-                    background-color: #00e0f0;
-                    transform: scale(1.05);
-                    box-shadow: 0 0 20px rgba(0, 224, 240, 0.5);
-                }
-            </style>
         </nav>
         `;
 

@@ -12,125 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <style>
-        /* --- Variables de Color y Diseño --- */
-        :root {
-            --bg-dark: #0B0A1B;
-            --bg-card: rgba(18, 16, 40, 0.6);
-            --border-color: rgba(255, 255, 255, 0.1);
-            --brand-cyan: #00BCD4;
-            --brand-pink: #C1268C;
-        }
-
-        /* --- Estilos Generales --- */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0c0a1d;
-            background-image: linear-gradient(135deg, #1a1f36 0%, #0c0a1d 50%, #2c1e5a 100%);
-            color: #E5E7EB;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        /* --- Barra de Navegación --- */
-        .navbar {
-            background-color: rgba(11, 10, 27, 0.8);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        /* --- Clases de Utilidad --- */
-
-        /* Texto con color gradiente */
-        .gradient-text {
-            background: linear-gradient(90deg, var(--brand-cyan), var(--brand-pink));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* Botón de acción principal */
-        .cta-button {
-            background-color: var(--brand-cyan);
-            color: white;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 188, 212, 0.2);
-        }
-
-        .cta-button:hover {
-            transform: scale(1.05);
-            background-color: #00e0f0;
-            box-shadow: 0 0 25px rgba(0, 224, 240, 0.5);
-        }
-
-        /* --- Estilos de Componentes Específicos --- */
-
-        /* Tarjetas de enlaces (manuales, guías, etc.) */
-        .link-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 1rem;
-            padding: 1.5rem;
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            text-decoration: none;
-            backdrop-filter: blur(8px);
-        }
-
-        .link-card:hover {
-            transform: translateY(-8px);
-            background: rgba(25, 23, 53, 0.7);
-            border-color: var(--brand-cyan);
-            box-shadow: 0 0 25px rgba(0, 188, 212, 0.15);
-        }
-
-        .link-card .link-text {
-            color: var(--brand-cyan);
-            font-weight: 600;
-        }
-
-        /* Acordeón para Preguntas Frecuentes (FAQ) */
-        .faq-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 0.75rem;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(8px);
-        }
-
-        .faq-item summary {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.25rem;
-            cursor: pointer;
-            list-style: none;
-        }
-
-        .faq-item summary::-webkit-details-marker {
-            display: none;
-        }
-
-        .faq-item .faq-content {
-            padding: 0 1.25rem 1.25rem;
-            color: #d1d5db;
-        }
-
-        .faq-item .icon {
-            transition: transform 0.3s ease-in-out;
-            color: var(--brand-cyan);
-        }
-
-        .faq-item[open]>summary .icon {
-            transform: rotate(180deg);
-        }
-
-        .faq-item:hover {
-            border-color: var(--brand-cyan);
-        }
-    </style>
 </head>
 
 <body class="min-h-screen">
@@ -157,7 +38,7 @@
                 <!-- Tarjeta: Manual del Abonado -->
                 <a href="https://drive.google.com/file/d/1vpI9lnq-4iAu7H3NaHJBIldGonot8fWG/view?usp=drive_link"
                     target="_blank" class="link-card">
-                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-cyan-400"
+                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-brand-cyan"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 6.253v11.494m-9-5.996h18" />
@@ -171,7 +52,7 @@
                 <!-- Tarjeta: Cómo Instalar la App -->
                 <a href="https://drive.google.com/file/d/1uIObs55UAb7eWF2C6ySPMP-LvYmHAX2Q/view?usp=drive_link"
                     target="_blank" class="link-card">
-                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-cyan-400"
+                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-brand-cyan"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -185,7 +66,7 @@
                 <!-- Tarjeta: Alcance de tu Servicio -->
                 <a href="https://drive.google.com/file/d/1Y25a4LPg5xCG6Gbn1905xvRWVopiRBU9/view?usp=sharing"
                     target="_blank" class="link-card">
-                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-cyan-400"
+                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-brand-cyan"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -198,7 +79,7 @@
                 </a>
                 <!-- Tarjeta: Ver TV desde Compu -->
                 <a href="https://player.sensa.com.ar/" target="_blank" class="link-card">
-                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-cyan-400"
+                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-brand-cyan"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -211,7 +92,7 @@
                 </a>
                 <!-- Tarjeta: Administrar Cuenta -->
                 <a href="https://www.sensa.com.ar/?p=login" target="_blank" class="link-card">
-                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-cyan-400"
+                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-brand-cyan"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -226,7 +107,7 @@
                 </a>
                 <!-- Tarjeta: Grilla de Canales -->
                 <a href="../pages/Grilla.pdf" target="_blank" class="link-card">
-                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-cyan-400"
+                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-brand-cyan"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16" />
@@ -242,7 +123,7 @@
 
         <!-- Sección de Dispositivos Compatibles -->
         <section class="mb-16 text-center">
-            <h2 class="text-3xl font-bold mb-2"><span class="gradient-text">¿Tu dispositivo es compatible?</span></h2>
+            <h2 class="text-3xl font-bold mb-2"><span class="bg-gradient-to-r from-brand-cyan to-brand-magenta text-transparent bg-clip-text">¿Tu dispositivo es compatible?</span></h2>
             <p class="mt-4 text-large text-gray-300">
                 La app es compatible con dispositivos Android TV, Samsung TV, Apple TV, Roku, PC, y Chromecast.
             </p>
@@ -282,7 +163,7 @@
                     de los
                     <a href="https://drive.google.com/drive/folders/12rY281E3Wyifdzl66vFdrLYNvq3vsoqj?usp=sharing"
                         target="_blank"
-                        class="text-cyan-400 underline hover:text-cyan-300 transition-colors duration-300">
+                        class="text-brand-cyan underline hover:text-brand-cyan/80 transition-colors duration-300">
                         dispositivos homologados
                     </a>.
                 </p>
@@ -305,7 +186,7 @@
                     </span>
                     <input id="faq-search" type="search"
                         placeholder="Buscá por palabra clave (ej: contraseña, roku, grabar...)"
-                        class="w-full py-3.5 pl-11 pr-4 bg-slate-800/60 border border-slate-700 rounded-full focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 outline-none transition duration-300">
+                        class="w-full py-3.5 pl-11 pr-4 bg-slate-800/60 border border-slate-700 rounded-full focus:ring-2 focus:ring-cyan-400 focus:border-brand-cyan outline-none transition duration-300">
                 </div>
             </div>
             <br>
@@ -433,13 +314,12 @@
         </section>
 
         <!-- Sección de Contacto y Soporte -->
-        <section class="text-center rounded-2xl p-8 md:p-12"
-            style="background: linear-gradient(145deg, rgba(193, 38, 140, 0.1), rgba(0, 188, 212, 0.1)), var(--bg-card); border: 1px solid var(--border-color);">
-            <h2 class="text-3xl font-bold mb-2" style="color: var(--brand-pink);">¿Necesitás Soporte Técnico?</h2>
+        <section class="text-center rounded-2xl p-8 md:p-12">
+            <h2 class="text-3xl font-bold mb-2">¿Necesitás Soporte Técnico?</h2>
             <p class="text-slate-300 mb-8 max-w-xl mx-auto">Si tenés algún problema o no pudiste resolver tu duda,
                 nuestro equipo de soporte está listo para ayudarte.</p>
             <a href="https://wa.me/5491128177964" target="_blank"
-                class="cta-button py-3 px-8 text-lg font-bold rounded-full inline-block">
+                class="bg-brand-cyan text-white hover:bg-brand-cyan/80 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-brand-cyan/50 py-3 px-8 text-lg font-bold rounded-full inline-block">
                 Contactar por WhatsApp
             </a>
         </section>
