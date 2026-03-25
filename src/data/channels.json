@@ -1,0 +1,1176 @@
+[
+  {
+    "category": "AIRE Nacionales",
+    "channels": [
+      {
+        "number": "110",
+        "name": "TV Pública",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "120",
+        "name": "América 2",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "130",
+        "name": "Canal 13",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "140",
+        "name": "Canal 9",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "150",
+        "name": "Telefe",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "160",
+        "name": "TN",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "165",
+        "name": "CNN",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "166",
+        "name": "CNN Internacional",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "170",
+        "name": "C5N",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "174",
+        "name": "A24",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "180",
+        "name": "Canal 26",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "190",
+        "name": "Crónica",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "192",
+        "name": "Multivisión Federal",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "195",
+        "name": "NET TV",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "196",
+        "name": "Canal E",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "197",
+        "name": "Bravo TV",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "200",
+        "name": "La Nación +",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "204",
+        "name": "Ciudad Magazine",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "210",
+        "name": "Encuentro",
+        "pack": "BÁSICO",
+        "isBadge": true
+      }
+    ]
+  },
+  {
+    "category": "Deportes",
+    "channels": [
+      {
+        "number": "215",
+        "name": "America Sports",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "220",
+        "name": "Deportv",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "225",
+        "name": "Golf Channel",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "230",
+        "name": "TYC Sports",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "240",
+        "name": "ESPN",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "250",
+        "name": "ESPN 2",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "260",
+        "name": "ESPN 3",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "270",
+        "name": "ESPN Extra",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "280",
+        "name": "Fox Sports",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "290",
+        "name": "Fox Sports 2",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "300",
+        "name": "Fox Sports 3",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "305",
+        "name": "El Garage",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "306",
+        "name": "Discovery Turbo",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "307",
+        "name": "PX Sports",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "310",
+        "name": "TNT Sports",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "320",
+        "name": "ESPN Premium",
+        "pack": "PREMIUM",
+        "isBadge": true
+      }
+    ]
+  },
+  {
+    "category": "Infantiles & Premium",
+    "channels": [
+      {
+        "number": "330",
+        "name": "Paka Paka",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "334",
+        "name": "Baby TV",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "335",
+        "name": "Nick JR",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "336",
+        "name": "ZooMoo",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "340",
+        "name": "Discovery Kids",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "360",
+        "name": "Disney JR",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "370",
+        "name": "Disney Channel",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "380",
+        "name": "Cartoon Network",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "382",
+        "name": "Nickelodeon",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "385",
+        "name": "Cartoonito",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "388",
+        "name": "Tooncast",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "389",
+        "name": "Canal Infantil",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "390",
+        "name": "HBO",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "400",
+        "name": "HBO 2",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "405",
+        "name": "HBO Plus",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "410",
+        "name": "HBO Family",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "420",
+        "name": "HBO Signature",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "430",
+        "name": "HBO Mundi",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "440",
+        "name": "HBO Pop",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "450",
+        "name": "HBO Xtreme",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "460",
+        "name": "Universal Premiere",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "470",
+        "name": "Universal Crime",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "480",
+        "name": "Universal Comedy",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "490",
+        "name": "Universal Cinema",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "500",
+        "name": "Universal Reality",
+        "pack": "PREMIUM",
+        "isBadge": true
+      }
+    ]
+  },
+  {
+    "category": "Cine y Series",
+    "channels": [
+      {
+        "number": "510",
+        "name": "CineAR",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "512",
+        "name": "Volver",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "520",
+        "name": "Cinemax",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "525",
+        "name": "Europa Europa",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "530",
+        "name": "Space",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "535",
+        "name": "Film & Arts",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "540",
+        "name": "Cinecanal",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "545",
+        "name": "Golden",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "547",
+        "name": "Golden Edge",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "550",
+        "name": "TNT",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "555",
+        "name": "I-Sat",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "560",
+        "name": "FX",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "561",
+        "name": "Cine Premium",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "562",
+        "name": "Cine Hispano",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "563",
+        "name": "Cine Familiar",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "564",
+        "name": "Morbido TV",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "570",
+        "name": "Comedy Central",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "580",
+        "name": "Star Channel",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "590",
+        "name": "Warner",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "600",
+        "name": "Sony",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "610",
+        "name": "AXN",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "614",
+        "name": "SYFY",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "620",
+        "name": "TNT Series",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "630",
+        "name": "AMC",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "640",
+        "name": "Universal TV",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "645",
+        "name": "Studio Universal",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "650",
+        "name": "DHE",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "655",
+        "name": "Paramount",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "665",
+        "name": "TCM",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "666",
+        "name": "Eurochannel",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "667",
+        "name": "DePelícula",
+        "pack": "BÁSICO",
+        "isBadge": true
+      }
+    ]
+  },
+  {
+    "category": "Documentales y Estilo de Vida",
+    "channels": [
+      {
+        "number": "670",
+        "name": "El Gourmet",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "680",
+        "name": "Food Network",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "685",
+        "name": "HGTV",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "690",
+        "name": "Mas Chic",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "700",
+        "name": "Glitz",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "710",
+        "name": "Home & Health",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "711",
+        "name": "E! Entertainment",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "714",
+        "name": "Lifetime",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "720",
+        "name": "A&E",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "730",
+        "name": "TRUTV",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "740",
+        "name": "ID",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "750",
+        "name": "Discovery Theater",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "755",
+        "name": "Discovery Science",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "760",
+        "name": "Discovery World",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "770",
+        "name": "Nat Geo",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "780",
+        "name": "Animal Planet",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "781",
+        "name": "Love Nature",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "788",
+        "name": "Sun Channel",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "790",
+        "name": "Discovery Channel",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "795",
+        "name": "TLC HD",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "800",
+        "name": "History",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "810",
+        "name": "History 2",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "820",
+        "name": "Canal Rural",
+        "pack": "BÁSICO",
+        "isBadge": true
+      }
+    ]
+  },
+  {
+    "category": "Música y Novelas",
+    "channels": [
+      {
+        "number": "828",
+        "name": "Quiero",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "830",
+        "name": "HTV",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "831",
+        "name": "Mi Música Romántica",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "832",
+        "name": "Mi Música Reggaeton",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "833",
+        "name": "Mi Música Hit",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "834",
+        "name": "Mi Música K Pop",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "840",
+        "name": "MTV Live",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "845",
+        "name": "MTV",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "846",
+        "name": "Much Music",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "847",
+        "name": "Telehit",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "865",
+        "name": "TNT Novelas",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "866",
+        "name": "Novelisima",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "867",
+        "name": "Telenovelas",
+        "pack": "BÁSICO",
+        "isBadge": true
+      }
+    ]
+  },
+  {
+    "category": "Internacionales y Otros",
+    "channels": [
+      {
+        "number": "869",
+        "name": "vePLUS",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "870",
+        "name": "TVE",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "871",
+        "name": "Telemundo",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "872",
+        "name": "RAI",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "873",
+        "name": "France24",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "874",
+        "name": "DW Noticias",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "875",
+        "name": "Las Estrellas",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "878",
+        "name": "TV Chile",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "890",
+        "name": "EWTN",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "891",
+        "name": "Radio María",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "892",
+        "name": "Canal Luz",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "894",
+        "name": "Maranatha",
+        "pack": "BÁSICO",
+        "isBadge": true
+      },
+      {
+        "number": "900",
+        "name": "Playboy",
+        "pack": "PREMIUM",
+        "isBadge": true
+      },
+      {
+        "number": "1000",
+        "name": "Sensa",
+        "pack": "BÁSICO",
+        "isBadge": true
+      }
+    ]
+  },
+  {
+    "category": "Locales y Regionales",
+    "channels": [
+      {
+        "number": "2",
+        "name": "TVCO | Gral. Pico",
+        "pack": "La Pampa",
+        "isBadge": false
+      },
+      {
+        "number": "3",
+        "name": "CPETV | Coop. Santa Rosa",
+        "pack": "La Pampa",
+        "isBadge": false
+      },
+      {
+        "number": "4",
+        "name": "CEPATV | Punta Alta",
+        "pack": "Buenos Aires",
+        "isBadge": false
+      },
+      {
+        "number": "10",
+        "name": "Patagonia TV Tour | El Calafate",
+        "pack": "Santa Cruz",
+        "isBadge": false
+      },
+      {
+        "number": "11",
+        "name": "CLYFER | Rojas",
+        "pack": "Buenos Aires",
+        "isBadge": false
+      },
+      {
+        "number": "12",
+        "name": "CETV | Gral. Deheza",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "13",
+        "name": "COONET | Brinkmann",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "14",
+        "name": "Nexos MC | Alcira Gigena",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "15",
+        "name": "Río TV | Río Primero",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "16",
+        "name": "COVITEVE | Villa del Rosario",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "17",
+        "name": "Luque TV | Luque",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "18",
+        "name": "COVISAR | Santa Rosa de Río Primero",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "19",
+        "name": "TempleTV | Santiago Temple",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "20",
+        "name": "TV Coop | J. Posse",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "21",
+        "name": "Canal Coop | Colonia Caroya",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "22",
+        "name": "Canal 12 | Posadas",
+        "pack": "Misiones",
+        "isBadge": false
+      },
+      {
+        "number": "23",
+        "name": "T5 Satelital | Corrientes",
+        "pack": "Corrientes",
+        "isBadge": false
+      },
+      {
+        "number": "24",
+        "name": "Canal Cooperativo | Alicia",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "25",
+        "name": "CEOSCA TV | Camilo Aldao",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "28",
+        "name": "Teleco Zonal Ucacha",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "29",
+        "name": "CoopPlus tv | Porteña",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "30",
+        "name": "Canal 3 | Tacural",
+        "pack": "Santa Fe",
+        "isBadge": false
+      },
+      {
+        "number": "31",
+        "name": "RTV Canal 2 Golcable | San Andrés de Giles",
+        "pack": "Buenos Aires",
+        "isBadge": false
+      },
+      {
+        "number": "34",
+        "name": "Fullvision | Funes",
+        "pack": "Santa Fe",
+        "isBadge": false
+      },
+      {
+        "number": "35",
+        "name": "Canal 2 TV Cooperativa | Pueblo San Jose",
+        "pack": "Buenos Aires",
+        "isBadge": false
+      },
+      {
+        "number": "36",
+        "name": "Canal 11 | Maria Juana",
+        "pack": "Santa Fe",
+        "isBadge": false
+      },
+      {
+        "number": "37",
+        "name": "Canal 4 | Pigüé",
+        "pack": "Buenos Aires",
+        "isBadge": false
+      },
+      {
+        "number": "39",
+        "name": "El Seis TV | Bariloche",
+        "pack": "Río Negro",
+        "isBadge": false
+      },
+      {
+        "number": "46",
+        "name": "Canal 3 | Arroyito",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "47",
+        "name": "Canal Local | Río Tercero",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "48",
+        "name": "Canal Freyre",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "49",
+        "name": "Canal 2 | Almafuerte",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "50",
+        "name": "C50 | Morteros",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "51",
+        "name": "CEGRO tv | General Roca",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "52",
+        "name": "Chaco TV",
+        "pack": "Chaco",
+        "isBadge": false
+      },
+      {
+        "number": "53",
+        "name": "Canal 11 | Oliva",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "54",
+        "name": "Vive",
+        "pack": "Santa Fe",
+        "isBadge": false
+      },
+      {
+        "number": "71",
+        "name": "CECSAGAL TV | General Alvear",
+        "pack": "Mendoza",
+        "isBadge": false
+      },
+      {
+        "number": "79",
+        "name": "Coopetel TV | El Bolsón",
+        "pack": "Mendoza",
+        "isBadge": false
+      },
+      {
+        "number": "100",
+        "name": "Vivencias | Monte Buey",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "102",
+        "name": "Unidos TV | Bell Ville",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "103",
+        "name": "El Tres | Rosario",
+        "pack": "Santa Fe",
+        "isBadge": false
+      },
+      {
+        "number": "104",
+        "name": "Telefe | Rosario",
+        "pack": "Santa Fe",
+        "isBadge": false
+      },
+      {
+        "number": "105",
+        "name": "Telefe | Santa Fe",
+        "pack": "Santa Fe",
+        "isBadge": false
+      },
+      {
+        "number": "106",
+        "name": "Canal 12 | Córdoba",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "107",
+        "name": "Canal 10 | Córdoba",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "108",
+        "name": "Telefe | Córdoba",
+        "pack": "Córdoba",
+        "isBadge": false
+      },
+      {
+        "number": "109",
+        "name": "Telediario Digital | Río Cuarto",
+        "pack": "Córdoba",
+        "isBadge": false
+      }
+    ]
+  }
+]
