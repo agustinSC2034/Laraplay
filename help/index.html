@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="https://www.it-tel.com.ar/img/laraplay_logo.png">
 
     <!-- Librerías y Fuentes Externas -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../src/main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -136,27 +136,10 @@
 <body class="min-h-screen">
 
     <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/5491128177964" target="_blank"
-        class="fixed bottom-5 right-5 z-50 p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 hover:scale-110 transition-transform">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="h-8 w-8">
-    </a>
+    <app-whatsapp></app-whatsapp>
 
     <!-- Barra de Navegación Superior -->
-    <nav class="navbar sticky top-0 z-40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0">
-                    <a href="../index.html" title="Volver a la página principal">
-                        <img class="h-12" src="https://www.it-tel.com.ar/img/laraplay_logo.png" alt="Laraplay Logo">
-                    </a>
-                </div>
-                <div class="flex items-center">
-                    <a href="https://www.sensa.com.ar/?p=login" target="_blank"
-                        class="cta-button text-white px-5 py-2.5 rounded-full text-sm font-bold">Mi Cuenta</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <app-navbar></app-navbar>
 
     <!-- Contenido Principal de la Página -->
     <main class="relative z-10 max-w-5xl mx-auto p-4 sm:p-8">
@@ -464,12 +447,7 @@
     </main>
 
     <!-- Pie de Página -->
-    <footer class="mt-16 py-12 px-4 sm:px-6 lg:px-8 text-center border-t border-slate-800">
-        <img class="h-12 mx-auto mb-4" src="https://www.it-tel.com.ar/img/laraplay_logo.png" alt="Laraplay Logo">
-        <p class="text-gray-400 text-sm">&copy; 2025 LARANET.</p>
-        <p class="text-gray-500 text-xs mt-2">Laraplay es un servicio de TV ofrecido por Laranet a través de la
-            plataforma Sensa.</p>
-    </footer>
+    <app-footer></app-footer>
 
     <!-- Script para la funcionalidad de búsqueda en las FAQ -->
     <script>
@@ -479,30 +457,34 @@
             const faqItems = faqContainer.querySelectorAll('.faq-item');
             const noResultsMessage = document.getElementById('no-results');
 
-            searchInput.addEventListener('input', (e) => {
-                const searchTerm = e.target.value.toLowerCase().trim();
-                let visibleCount = 0;
+            if (searchInput && faqContainer) {
+                searchInput.addEventListener('input', (e) => {
+                    const searchTerm = e.target.value.toLowerCase().trim();
+                    let visibleCount = 0;
 
-                faqItems.forEach(item => {
-                    const question = item.querySelector('summary span').textContent.toLowerCase();
-                    const answer = item.querySelector('.faq-content').textContent.toLowerCase();
+                    faqItems.forEach(item => {
+                        const summaryText = item.querySelector('summary span');
+                        const contentText = item.querySelector('.faq-content');
+                        const question = summaryText ? summaryText.textContent.toLowerCase() : "";
+                        const answer = contentText ? contentText.textContent.toLowerCase() : "";
 
-                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
-                        item.style.display = 'block';
-                        visibleCount++;
+                        if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                            item.style.display = 'block';
+                            visibleCount++;
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+
+                    if (visibleCount === 0 && searchTerm !== '') {
+                        noResultsMessage.style.display = 'block';
                     } else {
-                        item.style.display = 'none';
+                        noResultsMessage.style.display = 'none';
                     }
                 });
-
-                if (visibleCount === 0 && searchTerm !== '') {
-                    noResultsMessage.style.display = 'block';
-                } else {
-                    noResultsMessage.style.display = 'none';
-                }
-            });
+            }
         });
     </script>
+    <script type="module" src="/src/main.js"></script>
 </body>
-
 </html>

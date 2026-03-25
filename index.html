@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LARAPLAY - TV en vivo y todo el fútbol</title>
     <link rel="icon" type="image/png" href="https://www.it-tel.com.ar/img/laraplay_logo.png" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/src/main.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
@@ -103,82 +103,10 @@
 
 <body class="bg-gray-900">
     <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/5491128177964" target="_blank"
-        class="fixed bottom-5 right-5 z-50 p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 hover:scale-110 transition-transform">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="h-8 w-8">
-    </a>
+    <app-whatsapp></app-whatsapp>
 
     <!-- Barra de Navegación Superior -->
-    <nav class="navbar sticky top-0 z-40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0">
-                    <a href="#"><img class="h-12" src="https://www.it-tel.com.ar/img/laraplay_logo.png"
-                            alt="Laraplay Logo" /></a>
-                </div>
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-white focus:outline-none">
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="help/index.html" class="px-4 py-2 rounded-full text-sm font-bold"
-                            style="background-color: #c1268c; color: white; transition: all 0.3s ease; text-align: center; display: inline-block;"
-                            onmouseover="this.style.backgroundColor='#a11d73'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 30px rgba(193, 38, 140, 0.7)';"
-                            onmouseout="this.style.backgroundColor='#c1268c'; this.style.transform='scale(1)'; this.style.boxShadow='none';">Centro
-                            de Ayuda</a>
-                        <a target="_blank" href="https://www.sensa.com.ar/?p=login"
-                            class="cta-button text-white px-4 py-2 rounded-full text-sm font-bold">Mi Cuenta</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden transition-all duration-300 transform -translate-y-4 opacity-0">
-            <div class="flex flex-col items-center px-2 pt-2 pb-3 space-y-3 sm:px-3">
-                <a href="help/index.html"
-                    class="block px-4 py-2 rounded-full text-sm font-bold text-white text-center"
-                    style="background-color: #c1268c; transition: all 0.3s ease;"
-                    onmouseover="this.style.backgroundColor='#a11d73'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 30px rgba(193, 38, 140, 0.7)';"
-                    onmouseout="this.style.backgroundColor='#c1268c'; this.style.transform='scale(1)'; this.style.boxShadow='none';">Centro
-                    de Ayuda</a>
-                <a target="_blank" href="https://www.sensa.com.ar/?p=login"
-                    class="block cta-button text-white px-4 py-2 rounded-full text-sm font-bold text-center">Mi
-                    Cuenta</a>
-            </div>
-        </div>
-    </nav>
-
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            if (mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.remove('hidden');
-                setTimeout(() => {
-                    mobileMenu.classList.remove('-translate-y-4', 'opacity-0');
-                    mobileMenu.classList.add('translate-y-0', 'opacity-100');
-                }, 10);
-            } else {
-                mobileMenu.classList.remove('translate-y-0', 'opacity-100');
-                mobileMenu.classList.add('-translate-y-4', 'opacity-0');
-                setTimeout(() => {
-                    mobileMenu.classList.add('hidden');
-                }, 300);
-            }
-        });
-    </script>
-    <style>
-        /* Extra: Ensure the mobile menu animates smoothly */
-        #mobile-menu {
-            will-change: transform, opacity;
-        }
-    </style>
+    <app-navbar></app-navbar>
 
     <!-- Sección Principal (Hero) -->
     <header class="relative overflow-hidden">
@@ -641,18 +569,8 @@
     </section>
 
     <!-- Footer (Pie de página) -->
-    <footer class="bg-gray-900 bg-opacity-50">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
-            <img class="h-12 mx-auto mb-4" src="https://www.it-tel.com.ar/img/laraplay_logo.png" alt="Laraplay Logo" />
-            <p class="text-gray-400 text-sm">
-                &copy; 2025 LARANET
-            </p>
-            <p class="text-gray-500 text-xs mt-2">
-                Laraplay es un servicio de TV ofrecido por Laranet a través de la
-                plataforma Sensa.
-            </p>
-        </div>
-    </footer>
+    <app-footer></app-footer>
+    <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
