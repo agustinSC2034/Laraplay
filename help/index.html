@@ -5,356 +5,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LARAPLAY | Centro de Ayuda</title>
-    <link rel="icon" type="image/png" href="https://www.it-tel.com.ar/img/laraplay_logo.png">
-
-    <!-- Librerías y Fuentes Externas -->
-    <link href="../src/main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/logos/laraplay_logo.png">
+    <link href="../src/styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body class="min-h-screen">
-
-    <!-- Botón Flotante de WhatsApp -->
+<body class="min-h-screen bg-gray-900 text-gray-200">
     <app-whatsapp></app-whatsapp>
-
-    <!-- Barra de Navegación Superior -->
     <app-navbar></app-navbar>
 
-    <!-- Contenido Principal de la Página -->
     <main class="relative z-10 max-w-5xl mx-auto p-4 sm:p-8">
-
-        <!-- Encabezado y Barra de Búsqueda -->
         <header class="text-center my-8 md:my-16">
             <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">Centro de Ayuda</h1>
-            <p class="text-slate-300 mt-4 text-lg max-w-2xl mx-auto">Encontrá respuestas, guías y todo lo que necesitás
-                para aprovechar al máximo tu servicio.</p>
+            <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+                Encontrá respuestas, guías y accesos rápidos para aprovechar al máximo tu servicio.
+            </p>
         </header>
 
         <section class="mb-16">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Tarjeta: Como usar la app -->
                 <a href="https://drive.google.com/file/d/1vpI9lnq-4iAu7H3NaHJBIldGonot8fWG/view?usp=drive_link"
-                    target="_blank" class="link-card transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,188,212,0.6)] border border-gray-700/50 bg-slate-800/40 p-6 rounded-2xl flex flex-col h-full group">
-                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-[#00BCD4] group-hover:scale-110 transition-transform duration-300"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 6.253v11.494m-9-5.996h18" />
-                        </svg>
-                        <h3 class="font-bold text-lg text-white">Como usar la app</h3>
-                    </div>
-                    <p class="text-sm text-slate-300 flex-grow mb-4">Aprendé a grabar, crear perfiles, usar el control
-                        parental y mucho más.</p>
-                    <span class="text-[#00BCD4] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Ver manual →</span>
+                    target="_blank"
+                    class="transition-all duration-300 hover:scale-105 border border-white/10 bg-gray-800/50 p-6 rounded-2xl flex flex-col h-full">
+                    <h3 class="font-bold text-lg text-white">Cómo usar la app</h3>
+                    <p class="text-sm text-gray-300 mt-3 flex-grow">Aprendé a grabar, crear perfiles, usar el control parental y mucho más.</p>
+                    <span class="text-brand-cyan text-sm font-semibold mt-4 inline-block">Ver manual</span>
                 </a>
-                <!-- Tarjeta: Cómo Instalar la App -->
                 <a href="https://drive.google.com/file/d/1uIObs55UAb7eWF2C6ySPMP-LvYmHAX2Q/view?usp=drive_link"
-                    target="_blank" class="link-card transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,188,212,0.6)] border border-gray-700/50 bg-slate-800/40 p-6 rounded-2xl flex flex-col h-full group">
-                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-[#00BCD4] group-hover:scale-110 transition-transform duration-300"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                        </svg>
-                        <h3 class="font-bold text-lg text-white">Cómo Instalar la App</h3>
-                    </div>
-                    <p class="text-sm text-slate-300 flex-grow mb-4">Seguí los pasos para instalar LARAPLAY en tu Smart
-                        TV, Celular o Tablet.</p>
-                    <span class="text-[#00BCD4] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Ver guía →</span>
+                    target="_blank"
+                    class="transition-all duration-300 hover:scale-105 border border-white/10 bg-gray-800/50 p-6 rounded-2xl flex flex-col h-full">
+                    <h3 class="font-bold text-lg text-white">Cómo instalar la app</h3>
+                    <p class="text-sm text-gray-300 mt-3 flex-grow">Seguí los pasos para instalar LARAPLAY en tu Smart TV, celular o tablet.</p>
+                    <span class="text-brand-cyan text-sm font-semibold mt-4 inline-block">Ver guía</span>
                 </a>
-                <!-- Tarjeta: Alcance de tu Servicio -->
                 <a href="https://drive.google.com/file/d/1Y25a4LPg5xCG6Gbn1905xvRWVopiRBU9/view?usp=sharing"
-                    target="_blank" class="link-card transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,188,212,0.6)] border border-gray-700/50 bg-slate-800/40 p-6 rounded-2xl flex flex-col h-full group">
-                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-[#00BCD4] group-hover:scale-110 transition-transform duration-300"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <h3 class="font-bold text-lg text-white">Alcance de tu Servicio</h3>
-                    </div>
-                    <p class="text-sm text-slate-300 flex-grow mb-4">Conocé los dispositivos, grabaciones y funciones
-                        incluidas en tu plan.</p>
-                    <span class="text-[#00BCD4] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Ver detalle →</span>
+                    target="_blank"
+                    class="transition-all duration-300 hover:scale-105 border border-white/10 bg-gray-800/50 p-6 rounded-2xl flex flex-col h-full">
+                    <h3 class="font-bold text-lg text-white">Alcance de tu servicio</h3>
+                    <p class="text-sm text-gray-300 mt-3 flex-grow">Conocé los dispositivos, grabaciones y funciones incluidas en tu plan.</p>
+                    <span class="text-brand-cyan text-sm font-semibold mt-4 inline-block">Ver detalle</span>
                 </a>
-                <!-- Tarjeta: Ver TV desde Compu -->
-                <a href="https://player.sensa.com.ar/" target="_blank" class="link-card transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,188,212,0.6)] border border-gray-700/50 bg-slate-800/40 p-6 rounded-2xl flex flex-col h-full group">
-                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-[#00BCD4] group-hover:scale-110 transition-transform duration-300"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                        <h3 class="font-bold text-lg text-white">Ver TV desde tu Compu</h3>
-                    </div>
-                    <p class="text-sm text-slate-300 flex-grow mb-4">Accedé al reproductor web para ver todos los
-                        canales en vivo.</p>
-                    <span class="text-[#00BCD4] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Ir al reproductor →</span>
+                <a href="https://player.sensa.com.ar/" target="_blank"
+                    class="transition-all duration-300 hover:scale-105 border border-white/10 bg-gray-800/50 p-6 rounded-2xl flex flex-col h-full">
+                    <h3 class="font-bold text-lg text-white">Ver TV desde tu compu</h3>
+                    <p class="text-sm text-gray-300 mt-3 flex-grow">Accedé al reproductor web para ver todos los canales en vivo.</p>
+                    <span class="text-brand-cyan text-sm font-semibold mt-4 inline-block">Ir al reproductor</span>
                 </a>
-                <!-- Tarjeta: Administrar Cuenta -->
-                <a href="https://www.sensa.com.ar/?p=login" target="_blank" class="link-card transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,188,212,0.6)] border border-gray-700/50 bg-slate-800/40 p-6 rounded-2xl flex flex-col h-full group">
-                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-[#00BCD4] group-hover:scale-110 transition-transform duration-300"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                        <h3 class="font-bold text-lg text-white">Administrar tu Cuenta</h3>
-                    </div>
-                    <p class="text-sm text-slate-300 flex-grow mb-4">Gestioná tus dispositivos y perfiles desde el
-                        portal de Sensa.</p>
-                    <span class="text-[#00BCD4] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Ir al portal →</span>
+                <a href="https://www.sensa.com.ar/?p=login" target="_blank"
+                    class="transition-all duration-300 hover:scale-105 border border-white/10 bg-gray-800/50 p-6 rounded-2xl flex flex-col h-full">
+                    <h3 class="font-bold text-lg text-white">Administrar tu cuenta</h3>
+                    <p class="text-sm text-gray-300 mt-3 flex-grow">Gestioná tus dispositivos y perfiles desde el portal de Sensa.</p>
+                    <span class="text-brand-cyan text-sm font-semibold mt-4 inline-block">Ir al portal</span>
                 </a>
-                <!-- Tarjeta: Grilla de Canales -->
-                <a href="/help/Grilla.html" class="link-card transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,188,212,0.6)] border border-gray-700/50 bg-slate-800/40 p-6 rounded-2xl flex flex-col h-full group">
-                    <div class="flex items-center mb-3"><svg class="h-6 w-6 mr-3 text-[#00BCD4] group-hover:scale-110 transition-transform duration-300"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                        <h3 class="font-bold text-lg text-white">Grilla de Canales</h3>
-                    </div>
-                    <p class="text-sm text-slate-300 flex-grow mb-4">Consultá la grilla actualizada para no perderte tus
-                        programas favoritos.</p>
-                    <span class="text-[#00BCD4] text-sm font-semibold group-hover:translate-x-1 transition-transform inline-block">Ver grilla →</span>
+                <a href="./Grilla.html"
+                    class="transition-all duration-300 hover:scale-105 border border-white/10 bg-gray-800/50 p-6 rounded-2xl flex flex-col h-full">
+                    <h3 class="font-bold text-lg text-white">Grilla de canales</h3>
+                    <p class="text-sm text-gray-300 mt-3 flex-grow">Consultá la grilla actualizada para no perderte tus programas favoritos.</p>
+                    <span class="text-brand-cyan text-sm font-semibold mt-4 inline-block">Ver grilla</span>
                 </a>
             </div>
         </section>
 
-        <!-- Sección de Dispositivos Compatibles -->
         <section class="mb-16 text-center">
-            <h2 class="text-3xl font-bold mb-2"><span class="bg-gradient-to-r from-brand-cyan to-brand-magenta text-transparent bg-clip-text">¿Tu dispositivo es compatible?</span></h2>
-            <p class="mt-4 text-large text-gray-300">
-                La app es compatible con dispositivos Android TV, Samsung TV, Apple TV, Roku, PC, y Chromecast.
+            <h2 class="text-3xl font-bold mb-4">
+                <span class="bg-gradient-to-r from-brand-cyan to-brand-magenta text-transparent bg-clip-text">¿Tu dispositivo es compatible?</span>
+            </h2>
+            <p class="text-gray-300 max-w-3xl mx-auto">
+                La app es compatible con dispositivos Android TV, Samsung TV, Apple TV, Roku, PC y Chromecast.
             </p>
-            <br>
-            <p class="text-slate-300 mb-8">Hacé clic en tu equipo para ver la guía y verificar la versión.</p>
+            <p class="text-gray-400 mt-3 mb-8">Hacé clic en tu equipo para ver la guía y verificar la versión.</p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
                 <a href="../instructivo/Instructivo_android.html" target="_blank"
-                    class="link-card p-4 items-center justify-center text-center">
-                    <img src="../img/logos/Android_white.png" alt="Android TV" class="h-10 mx-auto mb-3 object-contain"
-                        onerror="this.style.display='none'">
-                    <h3 class="text-sm font-bold mt-auto text-white">Android TV</h3>
+                    class="border border-white/10 bg-gray-800/50 rounded-2xl p-6 text-center">
+                    <img src="../img/logos/Android_white.png" alt="Android TV" class="h-10 mx-auto mb-3 object-contain">
+                    <h3 class="text-sm font-bold text-white">Android TV</h3>
                 </a>
                 <a href="../instructivo/Instructivo_amazon.html" target="_blank"
-                    class="link-card p-4 items-center justify-center text-center">
-                    <img src="../img/logos/fire_tv_white.jpg" alt="Amazon Fire TV"
-                        class="h-11 mx-auto mb-3 object-contain" onerror="this.style.display='none'">
-                    <h3 class="text-sm font-bold mt-auto text-white">Fire TV</h3>
+                    class="border border-white/10 bg-gray-800/50 rounded-2xl p-6 text-center">
+                    <img src="../img/logos/fire_tv_white.jpg" alt="Fire TV" class="h-11 mx-auto mb-3 object-contain">
+                    <h3 class="text-sm font-bold text-white">Fire TV</h3>
                 </a>
                 <a href="../instructivo/Instructivo_apple.html" target="_blank"
-                    class="link-card p-4 items-center justify-center text-center">
-                    <img src="../img/logos/apple_white.png" alt="Apple TV" class="h-10 mx-auto mb-3 object-contain"
-                        onerror="this.style.display='none'">
-                    <h3 class="text-sm font-bold mt-auto text-white">Apple TV</h3>
+                    class="border border-white/10 bg-gray-800/50 rounded-2xl p-6 text-center">
+                    <img src="../img/logos/apple_white.png" alt="Apple TV" class="h-10 mx-auto mb-3 object-contain">
+                    <h3 class="text-sm font-bold text-white">Apple TV</h3>
                 </a>
                 <a href="../instructivo/Instructivo_celulares.html" target="_blank"
-                    class="link-card p-4 items-center justify-center text-center">
-                    <svg class="h-12 w-12 text-white mx-auto mb-3" viewBox="0 0 24 24" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z" />
+                    class="border border-white/10 bg-gray-800/50 rounded-2xl p-6 text-center">
+                    <svg class="h-12 w-12 text-white mx-auto mb-3" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z" />
                     </svg>
-                    <h3 class="text-sm font-bold mt-auto text-white">Celulares</h3>
+                    <h3 class="text-sm font-bold text-white">Celulares</h3>
                 </a>
             </div>
-            <div class="text-center mt-6 text-slate-300 text-sm">
-                <p class="mt-2">Si tenes dudas podes verificar si tu TV es compatible con la app Sensa buscándola dentro
-                    de los
-                    <a href="https://drive.google.com/drive/folders/12rY281E3Wyifdzl66vFdrLYNvq3vsoqj?usp=sharing"
-                        target="_blank"
-                        class="text-brand-cyan underline hover:text-brand-cyan/80 transition-colors duration-300">
-                        dispositivos homologados
-                    </a>.
-                </p>
-            <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-8 text-center">Preguntas Frecuentes</h2>
-            <div id="faq-container" class="max-w-3xl mx-auto space-y-4">
-                <div class="relative mb-8">
-                    <span class="absolute inset-y-0 left-0 flex items-center pl-4">
-                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                            fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </span>
-                    <input id="faq-search" type="search"
-                        placeholder="Buscá por palabra clave (ej: contraseña, roku, grabar...)"
-                        class="w-full py-3.5 pl-11 pr-4 bg-slate-800/60 border border-slate-700 rounded-full focus:ring-2 focus:ring-cyan-400 focus:border-brand-cyan outline-none transition duration-300">
-                </div>
+            <p class="mt-6 text-sm text-gray-300">
+                También podés verificar si tu TV es compatible con la app Sensa dentro de los
+                <a href="https://drive.google.com/drive/folders/12rY281E3Wyifdzl66vFdrLYNvq3vsoqj?usp=sharing" target="_blank"
+                    class="text-brand-cyan underline hover:text-brand-cyan/80 transition-colors duration-300">dispositivos homologados</a>.
+            </p>
+        </section>
 
-                <div class="faq-item bg-slate-800/20 border border-slate-700/50 rounded-xl overflow-hidden">
-                    <button class="faq-button w-full px-6 py-4 flex justify-between items-center text-left hover:bg-slate-700/30 transition-all duration-300 focus:outline-none">
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center text-white">Preguntas Frecuentes</h2>
+            <div class="max-w-3xl mx-auto mb-8">
+                <input id="faq-search" type="search" placeholder="Buscá por palabra clave"
+                    class="w-full py-3 px-5 bg-gray-800/60 border border-white/10 rounded-full outline-none">
+            </div>
+            <div id="faq-container" class="max-w-3xl mx-auto space-y-4">
+                <div class="faq-item bg-gray-800/30 border border-white/10 rounded-2xl overflow-hidden">
+                    <button class="faq-button w-full px-6 py-4 flex justify-between items-center text-left">
                         <span class="font-semibold text-white">Olvidé mi contraseña, ¿cómo la recupero?</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <div class="faq-panel max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out px-6">
-                        <div class="faq-content pb-4 text-slate-300 space-y-3">
-                            <p>En la pantalla de inicio de sesion de la app o del reproductor en el navegador, hacé clic en “Olvidé mis datos de acceso” y seguí los
-                                pasos. Si no recibís el mail, revisá tu carpeta de spam o correo no deseado.</p>
-                            <p>Si el problema continúa, contactate con nosotros por WhatsApp.</p>
+                        <div class="faq-content pb-4 text-gray-300">
+                            En la pantalla de inicio de sesión de la app o del reproductor web, hacé clic en "Olvidé mis datos de acceso" y seguí los pasos.
                         </div>
                     </div>
                 </div>
-
-                <div class="faq-item bg-slate-800/20 border border-slate-700/50 rounded-xl overflow-hidden">
-                    <button class="faq-button w-full px-6 py-4 flex justify-between items-center text-left hover:bg-slate-700/30 transition-all duration-300 focus:outline-none">
+                <div class="faq-item bg-gray-800/30 border border-white/10 rounded-2xl overflow-hidden">
+                    <button class="faq-button w-full px-6 py-4 flex justify-between items-center text-left">
                         <span class="font-semibold text-white">¿Cuántos dispositivos puedo registrar?</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <div class="faq-panel max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out px-6">
-                        <div class="faq-content pb-4 text-slate-300 space-y-3">
-                            <p>Podés registrar hasta <strong>6 dispositivos en total</strong> en tu cuenta, divididos en:
-                            </p>
-                            <ul class="list-disc list-inside pl-2 space-y-1">
-                                <li><strong>3 dispositivos de TV</strong> (Smart TV, Chromecast, TV Box, etc.).</li>
-                                <li><strong>3 dispositivos móviles y web</strong> (celulares, tablets o navegadores).</li>
-                            </ul>
-                            <p class="pt-2">Podés administrar tus equipos vinculados desde la sección "Mis dispositivos" en
-                                el portal web de Sensa.</p>
+                        <div class="faq-content pb-4 text-gray-300">
+                            Podés registrar hasta 6 dispositivos en total: 3 de TV y 3 móviles o web.
                         </div>
                     </div>
                 </div>
-
-                <div class="faq-item bg-slate-800/20 border border-slate-700/50 rounded-xl overflow-hidden">
-                    <button class="faq-button w-full px-6 py-4 flex justify-between items-center text-left hover:bg-slate-700/30 transition-all duration-300 focus:outline-none">
+                <div class="faq-item bg-gray-800/30 border border-white/10 rounded-2xl overflow-hidden">
+                    <button class="faq-button w-full px-6 py-4 flex justify-between items-center text-left">
                         <span class="font-semibold text-white">¿Cómo administro los dispositivos de mi cuenta?</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <div class="faq-panel max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out px-6">
-                        <div class="faq-content pb-4 text-slate-300 space-y-3">
-                            <p>Para configurar los equipos asociados a tu cuenta, ingresá a
-                                <strong>www.sensa.com.ar</strong>, pulsá en "INGRESAR" y luego en "MI CUENTA".</p>
-                            <p>Una vez dentro, verás el ícono <strong>"MIS DISPOSITIVOS"</strong>. Desde ahí podrás eliminar
-                                los que ya no utilices para liberar un espacio.</p>
+                        <div class="faq-content pb-4 text-gray-300">
+                            Ingresá a Sensa, abrí "Mi Cuenta" y gestioná tus equipos desde "Mis dispositivos".
                         </div>
                     </div>
                 </div>
-
-                <div class="faq-item bg-slate-800/20 border border-slate-700/50 rounded-xl overflow-hidden">
-                    <button class="faq-button w-full px-6 py-4 flex justify-between items-center text-left hover:bg-slate-700/30 transition-all duration-300 focus:outline-none">
-                        <span class="font-semibold text-white">No encuentro la app Sensa en la tienda de mi equipo.</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div class="faq-panel max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out px-6">
-                        <div class="faq-content pb-4 text-slate-300 space-y-3">
-                            <p><strong>Motivo principal:</strong> Es posible que tu dispositivo y/o la tienda de
-                                aplicaciones estén configurados en una región diferente a Argentina.</p>
-                            <p><strong>Solución:</strong> La app de Sensa solo se puede descargar en Argentina. Revisá la
-                                configuración de tu tienda y asegurate de que el país seleccionado sea Argentina. Los pasos
-                                varían según el dispositivo.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-item bg-slate-800/20 border border-slate-700/50 rounded-xl overflow-hidden">
-                    <button class="faq-button w-full px-6 py-4 flex justify-between items-center text-left hover:bg-slate-700/30 transition-all duration-300 focus:outline-none">
+                <div class="faq-item bg-gray-800/30 border border-white/10 rounded-2xl overflow-hidden">
+                    <button class="faq-button w-full px-6 py-4 flex justify-between items-center text-left">
                         <span class="font-semibold text-white">¿Cómo instalo la app Sensa en Roku?</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <div class="faq-panel max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out px-6">
-                        <div class="faq-content pb-4 text-slate-300 space-y-3">
-                            <p>Es muy simple, solo seguí estos pasos:</p>
-                            <ol class="list-decimal list-inside space-y-2">
-                                <li>En el menú principal de Roku, seleccioná la opción <strong>"Búsqueda"</strong>.</li>
-                                <li>Escribí la palabra <strong>"Sensa"</strong> en el buscador.</li>
-                                <li>Cuando aparezca la aplicación, seleccionala y elegí la opción <strong>"Instalar
-                                        canal"</strong>.</li>
-                            </ol>
+                        <div class="faq-content pb-4 text-gray-300">
+                            En el menú principal de Roku buscá "Sensa", seleccioná la aplicación y elegí "Instalar canal".
                         </div>
                     </div>
                 </div>
-
-                <div class="faq-item bg-slate-800/20 border border-slate-700/50 rounded-xl overflow-hidden">
-                    <button class="faq-button w-full px-6 py-4 flex justify-between items-center text-left hover:bg-slate-700/30 transition-all duration-300 focus:outline-none">
-                        <span class="font-semibold text-white">¿Puedo usar la app con root o jailbreak?</span>
+                <div class="faq-item bg-gray-800/30 border border-white/10 rounded-2xl overflow-hidden">
+                    <button class="faq-button w-full px-6 py-4 flex justify-between items-center text-left">
+                        <span class="font-semibold text-white">¿Cuánto internet consume el servicio?</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
                     <div class="faq-panel max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out px-6">
-                        <div class="faq-content pb-4 text-slate-300">
-                            <p>No. Por razones de seguridad y para proteger el contenido, no podrás acceder a LARAPLAY desde
-                                dispositivos con firmware modificado, permisos de superusuario (root) o jailbreak.</p>
+                        <div class="faq-content pb-4 text-gray-300">
+                            Recomendamos al menos 2 Mbps por dispositivo para una buena experiencia.
                         </div>
                     </div>
                 </div>
-
-                <div class="faq-item bg-slate-800/20 border border-slate-700/50 rounded-xl overflow-hidden">
-                    <button class="faq-button w-full px-6 py-4 flex justify-between items-center text-left hover:bg-slate-700/30 transition-all duration-300 focus:outline-none">
-                        <span class="font-semibold text-white">¿Cuánto Internet consume el servicio?</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div class="faq-panel max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out px-6">
-                        <div class="faq-content pb-4 text-slate-300 space-y-3">
-                            <p>Recomendamos al menos 2 Mbps por dispositivo para una buena experiencia. El consumo real
-                                puede variar según la calidad (SD o HD) y el dispositivo.</p>
-                            <p>Recordá que si usás tu conexión 3G/4G, el servicio consumirá datos de tu plan móvil. Te
-                                sugerimos conectarte a una red Wi-Fi para evitarlo.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-item bg-slate-800/20 border border-slate-700/50 rounded-xl overflow-hidden">
-                    <button class="faq-button w-full px-6 py-4 flex justify-between items-center text-left hover:bg-slate-700/30 transition-all duration-300 focus:outline-none">
-                        <span class="font-semibold text-white">¿Puedo ver un programa que ya empezó?</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="faq-icon h-5 w-5 text-gray-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div class="faq-panel max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out px-6">
-                        <div class="faq-content pb-4 text-slate-300">
-                            <p>¡Sí! Muchos canales permiten la función “Ver desde el inicio”. Buscá el ícono correspondiente
-                                en la guía interactiva para reiniciar un programa que ya está en vivo.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="no-results" class="text-center py-8 text-slate-400 hidden">
+                <div id="no-results" class="text-center py-8 text-gray-400 hidden">
                     <p class="font-semibold text-white">No se encontraron resultados</p>
                     <p class="text-sm">Intentá con otros términos de búsqueda.</p>
                 </div>
             </div>
         </section>
-">Intentá con otros términos de búsqueda.</p>
-                </div>
-            </div>
-        </section>
 
-        <!-- Sección de Contacto y Soporte -->
         <section class="text-center rounded-2xl p-8 md:p-12">
-            <h2 class="text-3xl font-bold mb-2">¿Necesitás Soporte Técnico?</h2>
-            <p class="text-slate-300 mb-8 max-w-xl mx-auto">Si tenés algún problema o no pudiste resolver tu duda,
-                nuestro equipo de soporte está listo para ayudarte.</p>
+            <h2 class="text-3xl font-bold mb-2 text-white">¿Necesitás soporte técnico?</h2>
+            <p class="text-gray-300 mb-8 max-w-xl mx-auto">
+                Si tenés algún problema o no pudiste resolver tu duda, nuestro equipo está listo para ayudarte.
+            </p>
             <a href="https://wa.me/5491128177964" target="_blank"
                 class="bg-brand-cyan text-white hover:bg-brand-cyan/80 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-brand-cyan/50 py-3 px-8 text-lg font-bold rounded-full inline-block">
                 Contactar por WhatsApp
             </a>
         </section>
-
     </main>
 
-    <!-- Pie de Página -->
     <app-footer></app-footer>
 
-    <!-- Script para la funcionalidad de búsqueda en las FAQ -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const searchInput = document.getElementById('faq-search');
             const faqContainer = document.getElementById('faq-container');
-            const faqItems = faqContainer.querySelectorAll('.faq-item');
+            const faqItems = faqContainer ? faqContainer.querySelectorAll('.faq-item') : [];
             const noResultsMessage = document.getElementById('no-results');
 
             if (searchInput && faqContainer) {
@@ -362,29 +212,22 @@
                     const searchTerm = e.target.value.toLowerCase().trim();
                     let visibleCount = 0;
 
-                    faqItems.forEach(item => {
-                        const questionSpan = item.querySelector('button span');
-                        const contentText = item.querySelector('.faq-content');
-                        const question = questionSpan ? questionSpan.textContent.toLowerCase() : "";
-                        const answer = contentText ? contentText.textContent.toLowerCase() : "";
-
-                        if (question.includes(searchTerm) || answer.includes(searchTerm)) {
-                            item.style.display = 'block';
-                            visibleCount++;
-                        } else {
-                            item.style.display = 'none';
-                        }
+                    faqItems.forEach((item) => {
+                        const question = item.querySelector('button span')?.textContent.toLowerCase() ?? '';
+                        const answer = item.querySelector('.faq-content')?.textContent.toLowerCase() ?? '';
+                        const matches = question.includes(searchTerm) || answer.includes(searchTerm);
+                        item.style.display = matches ? 'block' : 'none';
+                        if (matches) visibleCount++;
                     });
 
-                    if (visibleCount === 0 && searchTerm !== '') {
-                        noResultsMessage.style.display = 'block';
-                    } else {
-                        noResultsMessage.style.display = 'none';
+                    if (noResultsMessage) {
+                        noResultsMessage.style.display = visibleCount === 0 && searchTerm !== '' ? 'block' : 'none';
                     }
                 });
             }
         });
     </script>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="../src/main.js"></script>
 </body>
+
 </html>

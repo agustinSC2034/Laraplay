@@ -1,9 +1,13 @@
 export class Footer extends HTMLElement {
     connectedCallback() {
+        const rootPath = this.getRootPath();
+
         this.innerHTML = `
         <footer class="bg-gray-900 bg-opacity-50 mt-16 py-12 px-4 sm:px-6 lg:px-8 text-center border-t border-slate-800">
             <div class="max-w-7xl mx-auto text-center">
-                <img class="h-12 mx-auto mb-4" src="https://www.it-tel.com.ar/img/laraplay_logo.png" alt="Laraplay Logo" />
+                <div class="flex items-center justify-center mb-4">
+                    <img class="h-12 w-auto object-contain" src="${rootPath}img/logos/laraplay_logo.png" alt="Laraplay Logo" onerror="this.style.display='none'" />
+                </div>
                 <p class="text-gray-400 text-sm">
                     &copy; 2025 LARANET
                 </p>
@@ -14,6 +18,11 @@ export class Footer extends HTMLElement {
             </div>
         </footer>
         `;
+    }
+
+    getRootPath() {
+        const normalizedPath = window.location.pathname.replace(/\\/g, '/');
+        return /\/(help|instructivo|pages)\//.test(normalizedPath) ? '../' : './';
     }
 }
 

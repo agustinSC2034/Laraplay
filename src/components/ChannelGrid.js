@@ -5,7 +5,7 @@ class ChannelGrid extends HTMLElement {
 
     async connectedCallback() {
         try {
-            const response = await fetch('/src/data/channels.json');
+            const response = await fetch(this.getDataPath());
             if (!response.ok) throw new Error('Network response was not ok');
             const data = await response.json();
             this.render(data);
@@ -13,6 +13,12 @@ class ChannelGrid extends HTMLElement {
             console.error('Error fetching channels:', error);
             this.innerHTML = `<p class="text-center py-8 text-red-500">Error al cargar la grilla de canales.</p>`;
         }
+    }
+
+    getDataPath() {
+        const normalizedPath = window.location.pathname.replace(/\\/g, '/');
+        const isNestedPage = /\/(help|instructivo|pages)\//.test(normalizedPath);
+        return isNestedPage ? '../src/data/channels.json' : './src/data/channels.json';
     }
 
     render(sections) {

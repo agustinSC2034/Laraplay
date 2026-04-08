@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
+    "build:css": "tailwindcss -i ./src/main.css -o ./src/styles.css --minify",
     "dev": "vite",
     "build": "vite build"
   },

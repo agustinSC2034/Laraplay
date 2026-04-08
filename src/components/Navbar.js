@@ -1,12 +1,15 @@
 export class Navbar extends HTMLElement {
     connectedCallback() {
+        const rootPath = this.getRootPath();
+
         this.innerHTML = `
         <nav class="navbar sticky top-0 z-40 bg-gray-900 bg-opacity-80 backdrop-blur-md border-b border-white border-opacity-10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-20">
                     <div class="flex-shrink-0">
-                        <a href="/"><img class="h-12" src="https://www.it-tel.com.ar/img/laraplay_logo.png"
-                                alt="Laraplay Logo" /></a>
+                        <a href="${rootPath}index.html" class="flex items-center">
+                            <img class="h-12 w-auto object-contain" src="${rootPath}img/logos/laraplay_logo.png" alt="Laraplay Logo" onerror="this.style.display='none'" />
+                        </a>
                     </div>
                     <div class="md:hidden">
                         <button id="mobile-menu-button" class="text-white focus:outline-none">
@@ -19,7 +22,7 @@ export class Navbar extends HTMLElement {
                     </div>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
-                            <a href="/help/index.html" class="bg-brand-magenta text-white hover:bg-opacity-80 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-brand-magenta/50 px-4 py-2 rounded-full text-sm font-bold text-center inline-block">Centro
+                            <a href="${rootPath}help/index.html" class="bg-brand-magenta text-white hover:bg-opacity-80 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-brand-magenta/50 px-4 py-2 rounded-full text-sm font-bold text-center inline-block">Centro
                                 de Ayuda</a>
                             <a target="_blank" href="https://www.sensa.com.ar/?p=login"
                                 class="bg-brand-cyan text-white hover:bg-opacity-80 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-brand-cyan/50 px-4 py-2 rounded-full text-sm font-bold text-center inline-block">Mi Cuenta</a>
@@ -29,7 +32,7 @@ export class Navbar extends HTMLElement {
             </div>
             <div id="mobile-menu" class="hidden md:hidden transition-all duration-300 transform -translate-y-4 opacity-0">
                 <div class="flex flex-col items-center px-2 pt-2 pb-3 space-y-3 sm:px-3">
-                    <a href="/help/index.html"
+                    <a href="${rootPath}help/index.html"
                         class="block bg-brand-magenta text-white hover:bg-opacity-80 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-brand-magenta/50 px-4 py-2 rounded-full text-sm font-bold text-center">Centro
                         de Ayuda</a>
                     <a target="_blank" href="https://www.sensa.com.ar/?p=login"
@@ -41,6 +44,18 @@ export class Navbar extends HTMLElement {
         `;
 
         this.setupMobileMenu();
+    }
+
+    getRootPath() {
+        const { pathname, protocol } = window.location;
+        const normalizedPath = pathname.replace(/\\/g, '/');
+        const isNestedPage = /\/(help|instructivo|pages)\//.test(normalizedPath);
+
+        if (protocol === 'file:') {
+            return isNestedPage ? '../' : './';
+        }
+
+        return isNestedPage ? '../' : './';
     }
 
     setupMobileMenu() {
